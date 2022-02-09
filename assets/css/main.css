@@ -136,3 +136,8 @@ header .wrap {
     font-size: 12px;
     line-height: 8px;
 }
+
+.block_map {
+    outline: 1px solid red;
+    height: 475px;
+}
