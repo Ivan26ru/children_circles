@@ -3,5 +3,11 @@ jQuery(document).ready(function($) { //ожидание полной загру�
     console.log($); //проверка работоспособности JQuery
     console.log(jQuery.fn.jquery);//узнать версию JQuery
 
+    $('.bcc_container').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1
+    });
+
 
 }); //конец ready
