@@ -1,5 +1,5 @@
 body {
-    font-family: Abel, serif;
+    font-family: Calibri, sans-serif;
 }
 
 a {
@@ -32,6 +32,7 @@ header .wrap {
 
 .block_logo {
     display: flex;
+    width: 284px;
 }
 
 .wrap_logo {
@@ -52,7 +53,7 @@ header .wrap {
 }
 
 .blt_title {
-    font-size: 25px;
+    font-size: 24px;
     line-height: 26px;
 }
 
@@ -67,7 +68,7 @@ header .wrap {
 }
 
 .header_center {
-    margin-left: 73px;
+    /* margin-left: 73px; */
     margin-right: auto;
     /*display: flex;*/
     /*flex-direction: column;*/
@@ -106,7 +107,7 @@ header .wrap {
 }
 
 .menu_header_ul li {
-    margin-left: 45px;
+    margin-left: 40px;
 }
 
 .menu_header_ul li:first-child {
@@ -145,7 +146,8 @@ header .wrap {
 }
 
 .block_children_circles {
-    background:url('../img/bg_children_circles.png') no-repeat center/cover, rgba(226, 226, 226, 1)  ;
+    background: url('../img/bg_children_circles.png') no-repeat center/cover, rgba(226, 226, 226, 0.8);
+    background-blend-mode: screen;
     padding-bottom: 45px;
 }
 
@@ -156,18 +158,19 @@ header .wrap {
     font-weight: bold;
 }
 
-.bcc_container{
+.bcc_container {
     margin-top: 37px;
 }
 
-.bcc_col{
+.bcc_col {
     /*display: flex;*/
 }
 
-.bcc_col .bcc_item{
+.bcc_col .bcc_item {
     margin-top: 27px;
 }
-.bcc_col .bcc_item:first-child{
+
+.bcc_col .bcc_item:first-child {
     margin-top: 0;
 }
 
@@ -199,17 +202,17 @@ header .wrap {
     object-position: center;
 }
 
-.bcc_item_info{
+.bcc_item_info {
     margin-left: 20px;
     margin-right: auto;
 }
 
-.bcc_item_title{
+.bcc_item_title {
     font-size: 16px;
     height: 32px;
 }
 
-.bcc_item_text{
+.bcc_item_text {
     font-size: 14px;
 }
 
@@ -217,11 +220,11 @@ header .wrap {
     /*outline: 1px solid red;*/
     display: flex;
     align-items: flex-end;
-    font-size: 13px;
+    font-size: 11px;
 }
 
-.bcc_item_read_more_a{
-    color:#000000;
+.bcc_item_read_more_a {
+    color: #000000;
 }
 
 .bcc_item_discount {
@@ -229,7 +232,7 @@ header .wrap {
     right: 15px;
     top: 15px;
     font-size: 18px;
-    color:#DA5B3C;
+    color: #DA5B3C;
 }
 
 
@@ -238,7 +241,7 @@ header .wrap {
     right: 15px;
     top: 15px;
     font-size: 18px;
-    color:#DA5B3C;
+    color: #DA5B3C;
 }
 
 .bcc_container.slick-slider {
@@ -258,4 +261,110 @@ header .wrap {
 
 .bcc_container.slick-slider .slick-item {
 
+}
+
+.block_trial_lesson {
+    /* height: 277px; */
+    background: url("../img/bg_trial_lesson.png") no-repeat center/cover, rgb(45 36 54 / 44%);
+    background-blend-mode: color-burn;
+    padding-bottom: 20px;
+}
+
+.btl_container {
+    color: #ffffff;
+    padding-top: 45px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btl_item {
+    /*outline: 1px solid green;*/
+}
+
+.btl_item_title {
+    font-size: 31px;
+}
+
+.btl_item_text {
+    margin-top: 18px;
+    font-size: 16px;
+}
+
+.btl_item_total {
+    margin-top: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    line-height: 77px;
+    width: 366px;
+    text-align: center;
+    font-size: 44px;
+}
+
+.btl_item_total_old {
+    color: #DA5B3C;
+    text-decoration: line-through;
+    font-weight: 100;
+}
+
+.btl_form {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    width: 366px;
+    box-sizing: border-box;
+    position: relative;
+    padding: 24px 23px;
+    padding-top: 21px
+}
+
+.wrap_fire {
+    position: absolute;
+    top: -20px;
+    left: 33px;
+    width: 34px;
+    height: 44px;
+}
+
+
+.wrap_fire img {
+    object-fit: contain;
+    object-position: center center;
+    width: 100%;
+    height: 100%;
+}
+
+.btl_form_wrap_input {
+    margin-top: 16px;
+}
+
+.btl_form input {
+    display: block;
+    margin-top: 12px;
+    width: 100%;
+    border-radius: 13px;
+    height: 30px;
+    padding-left: 14px;
+    border: none;
+    box-sizing: border-box;
+    font-size: 13px;
+}
+
+.btl_form input:first-child {
+    margin-top: 0;
+}
+
+.btl_form_title {
+    font-size: 21px;
+    text-align: center;
+}
+
+.btl_form input[type="submit"] {
+    background: #DA5B3C;
+    line-height: 42px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 14px;
+    height: auto;
 }
