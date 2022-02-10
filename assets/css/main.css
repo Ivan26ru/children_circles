@@ -145,7 +145,7 @@ header .wrap {
 }
 
 .block_children_circles {
-    background: #fff url('../img/bg_children_circles.png') no-repeat center/cover;
+    background:url('../img/bg_children_circles.png') no-repeat center/cover, rgba(226, 226, 226, 1)  ;
     padding-bottom: 45px;
 }
 
