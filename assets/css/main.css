@@ -147,15 +147,16 @@ header .wrap {
 
 .block_children_circles {
     background: url('../img/bg_children_circles.png') no-repeat center/cover, rgba(226, 226, 226, 0.8);
+    padding-top: 30px;
     background-blend-mode: screen;
     padding-bottom: 45px;
 }
 
 .title_block {
-    padding-top: 35px;
-    font-size: 27px;
+    /* padding-top: 35px; */
+    font-size: 31px;
     text-align: center;
-    font-weight: bold;
+    /*font-weight: bold;*/
 }
 
 .bcc_container {
@@ -264,7 +265,6 @@ header .wrap {
 }
 
 .block_trial_lesson {
-    /* height: 277px; */
     background: url("../img/bg_trial_lesson.png") no-repeat center/cover, rgb(45 36 54 / 44%);
     background-blend-mode: color-burn;
     padding-bottom: 20px;
@@ -367,4 +367,89 @@ header .wrap {
     color: #ffffff;
     font-size: 14px;
     height: auto;
+}
+
+.block_pre-school_development {
+    background: url("../img/bg_pre-school_development.png") no-repeat center/cover;
+    /* background-blend-mode: screen; */
+    padding-top: 30px;
+    padding-bottom: 29px;
+}
+
+.text_block {
+    margin-top: 27px;
+    font-size: 16px;
+    line-height: 1.15;
+}
+
+.bpsd_wrap_card {
+    margin-top: 36px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bpst_ic_title {
+    font-size: 30px;
+    text-align: center;
+}
+
+.bpsd_item_card {
+    width: 365px;
+    /*outline: 1px solid red;*/
+}
+
+.bpsd_ic_block {
+    margin-top: 23px;
+    /*outline: 1px solid red;*/
+    padding: 20px;
+    padding-top: 23px;
+    box-sizing: border-box;
+    height: 365px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.bpsp_ic_block_title {
+    font-size: 23px;
+    padding-left: 50px;
+    background-image: url("../img/medal.png");
+    background-size: auto 50px;
+    background-repeat: no-repeat;
+    height: 90px;
+}
+
+.bpsd_ic_block_list {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.bpsd_ic_block_list li:before {
+    content: "•";
+    width: 15px;
+    display: inline-block;
+}
+
+.bpsd_ic_block_list li:first-child {
+    margin-top: 0;
+}
+
+.bpsd_ic_block_list li {
+    margin-top: 23px;
+    font-size: 18px;
+}
+
+.bpsd_ic_block_read_more {
+    background: #DA5B3C;
+    line-height: 42px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 15px;
+    height: auto;
+    border-radius: 8px;
+    display: inline-block;
+    padding: 0px 22px;
+    margin-top: auto;
+    margin-left: auto;
 }
