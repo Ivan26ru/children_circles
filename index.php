@@ -191,7 +191,24 @@
 	</div>
 </div>
 
+<div class="block_training_with_us">
+	<div class="wrap">
+		<p class="title_block">Обучение у нас</p>
 
+
+	</div>
+</div>
+
+<div class="block_we_teach">
+	<div class="wrap">
+		<p class="title_block">Мы обучаем</p>
+		<ul class="container_we_teach">
+			<?php for ($i = 0; $i < 15; $i++) { ?>
+				<li class="cwt_item"><a href="#">Театральная студия</a></li>
+			<?php } ?>
+		</ul>
+	</div>
+</div>
 
 <!--[if lt IE 9]>
 <script src="assets/libs/html5shiv/es5-shim.min.js"></script>

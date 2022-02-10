@@ -453,3 +453,56 @@ header .wrap {
     margin-top: auto;
     margin-left: auto;
 }
+
+.block_training_with_us {
+    height: 848px;
+    outline: 1px solid green;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+
+.block_we_teach {
+    background: url("../img/bg_trial_lesson.png") no-repeat center/cover, rgb(45 36 54 / 44%);
+    background-blend-mode: color-burn;
+    padding-bottom: 20px;
+    color: #ffffff;
+    padding-top: 30px;
+}
+
+.container_we_teach {
+    margin-top: 38px;
+    outline: 1px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: -28px;
+}
+
+.cwt_item a {
+    box-sizing: border-box;
+    width: 370px;
+    display: block;
+    line-height: 39px;
+    font-size: 18px;
+    color: #ffffff;
+    background: rgba(78, 53, 103, 1);
+    border: 1px solid #ffffff5e;
+    border-radius: 15px;
+    /*overflow: hidden;*/
+    padding-left: 60px;
+    position: relative;
+}
+
+
+.cwt_item a:before {
+    content: "•";
+    font-size: 12px;
+    position: absolute;
+    color: #ffffff;
+    left: 20px;
+    top: 0;
+}
+
+.cwt_item{
+    margin-bottom:28px;
+}
