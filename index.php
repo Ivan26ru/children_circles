@@ -146,7 +146,7 @@
 			</div>
 			<div class="btl_item">
 				<div class="btl_form">
-					<div class="wrap_fire">
+					<div class="icon_fire">
 						<img src="assets/img/fire.png" alt="">
 					</div>
 					<form action="">
@@ -182,7 +182,7 @@
 								<li>Помощь преподавателей</li>
 								<li>Оплата по договору</li>
 							</ul>
-							<p class="bpsd_ic_block_read_more">Подробнее</p>
+							<a href="#" class="bpsd_ic_block_read_more read_more_orange">Подробнее</a>
 						</div>
 					</div>
 				<?php } ?>
@@ -259,6 +259,21 @@
 <div class="block_special_offers">
 	<div class="wrap">
 		<p class="title_block">Спецпредложения и акции</p>
+		<div class="bso_wrap_card">
+			<?php for ($i = 0; $i < 3; $i++) { ?>
+				<div class="bso_item_card">
+					<div class="bso_card_wrap_img">
+						<img src="assets/img/img_bso.png" alt="">
+					</div>
+					<p class="bso_ic_title">Пробное занятие бесплатно</p>
+					<p class="bso_card_text">Попробуйте бесплатно</p>
+					<a href="#" class="bso_ic_block_read_more read_more_orange">Подробнее</a>
+					<div class="icon_fire">
+						<img src="assets/img/fire.png" alt="">
+					</div>
+				</div>
+			<?php } ?>
+		</div>
 	</div>
 </div>
 
