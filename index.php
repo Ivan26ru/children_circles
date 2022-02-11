@@ -256,6 +256,12 @@
 	</div>
 </div>
 
+<div class="block_special_offers">
+	<div class="wrap">
+		<p class="title_block">Спецпредложения и акции</p>
+	</div>
+</div>
+
 <!--[if lt IE 9]>
 <script src="assets/libs/html5shiv/es5-shim.min.js"></script>
 <script src="assets/libs/html5shiv/html5shiv.min.js"></script>

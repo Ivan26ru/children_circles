@@ -414,7 +414,7 @@ header .wrap {
 }
 
 .bpsd_ic_block_list li:before {
-    content: "•";
+    content: "â€¢";
     width: 15px;
     display: inline-block;
 }
@@ -485,7 +485,7 @@ header .wrap {
 
 
 .cwt_item a:before {
-    content: "•";
+    content: "â€¢";
     font-size: 12px;
     position: absolute;
     color: #ffffff;
@@ -524,6 +524,8 @@ header .wrap {
 
 .block_ratings_and_reviews {
     background: rgba(241, 241, 241, 1);
+    padding-top: 20px;
+    padding-bottom: 57px;
 }
 
 /* block_ratings_and_reviews rar */
@@ -554,6 +556,7 @@ header .wrap {
     padding: 15px;
     padding-bottom: 12px;
     position: relative;
+    border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .rar_item_wrap_img {
@@ -612,7 +615,7 @@ header .wrap {
 
 .rar_container.slick-slider {
     margin: 0 auto;
-    margin-top: 38px;
+    margin-top: 18px;
 }
 
 .rar_container.slick-slider .slick-slide {
@@ -665,4 +668,12 @@ header .wrap {
 .slick-next:before {
     transform: rotate(180deg);
     right:-25px;
+}
+
+.block_special_offers{
+    background: url("../img/bg_special_offers.png") no-repeat center/cover, rgb(45 36 54 / 44%);
+    background-blend-mode: color-burn;
+    color: #ffffff;
+    padding-top: 30px;
+    padding-bottom: 50px;
 }
