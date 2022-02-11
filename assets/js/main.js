@@ -16,5 +16,12 @@ jQuery(document).ready(function($) { //ожидание полной загру�
         arrows: true,
     });
 
+    $('.bt_container').slick({
+        infinite: true,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        arrows: true,
+    });
+
 
 }); //конец ready

@@ -277,6 +277,26 @@
 	</div>
 </div>
 
+<div class="block_teachers">
+	<div class="wrap">
+		<p class="title_block">Преподаватели</p>
+		<div class="bt_container">
+			<?php for ($i = 0; $i < 8; $i++) { ?>
+				<div class="bt_wrap_slider_item">
+					<div class="bt_item">
+						<div class="bt_avatar_wrap">
+							<img src="/assets/img/bt_avatar.png" alt="">
+						</div>
+						<p class="bt_item_name">Ирина Владимирована</p>
+						<p class="bt_item_experience">(10 лет опыта)</p>
+					</div>
+				</div>
+			<?php } ?>
+		</div>
+
+	</div>
+</div>
+
 <!--[if lt IE 9]>
 <script src="assets/libs/html5shiv/es5-shim.min.js"></script>
 <script src="assets/libs/html5shiv/html5shiv.min.js"></script>
