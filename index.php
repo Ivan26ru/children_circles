@@ -204,12 +204,26 @@
 		<p class="title_block">Мы обучаем</p>
 		<ul class="container_we_teach">
 			<?php for ($i = 0; $i < 15; $i++) { ?>
-				<li class="cwt_item"><a href="#">Театральная студия</a></li>
+				<li class="cwt_item"><a href="#">Театральная студия2</a></li>
 			<?php } ?>
 		</ul>
 	</div>
 </div>
 
+<div class="block_gratitude">
+	<div class="wrap">
+		<p class="title_block">Благодарности</p>
+		<div class="container_gratitude">
+			<?php for ($i = 0; $i < 5; $i++) { ?>
+				<div class="cg_item">
+					<div class="cg_wrap_img">
+						<img src="assets/img/img_gratitude.png" alt="">
+					</div>
+				</div>
+			<?php } ?>
+		</div>
+	</div>
+</div>
 <!--[if lt IE 9]>
 <script src="assets/libs/html5shiv/es5-shim.min.js"></script>
 <script src="assets/libs/html5shiv/html5shiv.min.js"></script>

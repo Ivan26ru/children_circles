@@ -462,11 +462,11 @@ header .wrap {
 }
 
 .block_we_teach {
-    background: url("../img/bg_trial_lesson.png") no-repeat center/cover, rgb(45 36 54 / 44%);
+    background: url("../img/bg_we_teach.png") no-repeat center/cover, rgb(45 36 54 / 44%);
     background-blend-mode: color-burn;
-    padding-bottom: 20px;
     color: #ffffff;
     padding-top: 30px;
+    padding-bottom: 50px;
 }
 
 .container_we_teach {
@@ -503,6 +503,31 @@ header .wrap {
     top: 0;
 }
 
+.cwt_item a:hover {
+    background: #DA5B3C;
+    border: 3px solid #ffffff;
+    color:#ffffff;
+    line-height: 35px;
+}
+
 .cwt_item{
     margin-bottom:28px;
+}
+
+.block_gratitude{
+    background: url("../img/bg_gratitude.png") no-repeat center/cover;
+    /* background-blend-mode: screen; */
+    padding-top: 30px;
+    padding-bottom: 29px;
+}
+
+
+.container_gratitude{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cg_wrap_img{
+
 }
