@@ -224,6 +224,38 @@
 		</div>
 	</div>
 </div>
+
+<div class="block_ratings_and_reviews">
+	<div class="wrap">
+		<p class="title_block">Рейтинги и отзывы</p>
+		<div class="rar_container">
+			<?php for ($i = 0; $i < 4; $i++) { ?>
+				<div class="rar_col">
+					<?php for ($i2 = 0; $i2 < 2; $i2++) { ?>
+						<div class="rar_item">
+							<div class="rar_item_wrap_img">
+								<img src="assets/img/img_rar.png" alt="">
+							</div>
+							<div class="rar_item_info">
+								<p class="rar_item_title">Ирина</p>
+								<p class="rar_item_text">Понравилась студия, дочка занимается ИЗО уже третий год</p>
+								<div class="rar_item_wrap_star">
+									<?php $max_star = rand(1, 5);
+									for ($i3 = 0; $i3 < $max_star; $i3++) { ?>
+										<div class="wrap_star_img">
+											<img src="assets/img/star.png" alt="">
+										</div>
+									<?php } ?>
+								</div>
+							</div>
+						</div>
+					<? }; ?>
+				</div>
+			<? } ?>
+		</div>
+	</div>
+</div>
+
 <!--[if lt IE 9]>
 <script src="assets/libs/html5shiv/es5-shim.min.js"></script>
 <script src="assets/libs/html5shiv/html5shiv.min.js"></script>

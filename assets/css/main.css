@@ -153,10 +153,8 @@ header .wrap {
 }
 
 .title_block {
-    /* padding-top: 35px; */
     font-size: 31px;
     text-align: center;
-    /*font-weight: bold;*/
 }
 
 .bcc_container {
@@ -227,15 +225,6 @@ header .wrap {
 .bcc_item_read_more_a {
     color: #000000;
 }
-
-.bcc_item_discount {
-    position: absolute;
-    right: 15px;
-    top: 15px;
-    font-size: 18px;
-    color: #DA5B3C;
-}
-
 
 .bcc_item_discount {
     position: absolute;
@@ -459,6 +448,7 @@ header .wrap {
     outline: 1px solid green;
     padding-top: 20px;
     box-sizing: border-box;
+    background: rgba(241, 241, 241, 1);
 }
 
 .block_we_teach {
@@ -506,15 +496,15 @@ header .wrap {
 .cwt_item a:hover {
     background: #DA5B3C;
     border: 3px solid #ffffff;
-    color:#ffffff;
+    color: #ffffff;
     line-height: 35px;
 }
 
-.cwt_item{
-    margin-bottom:28px;
+.cwt_item {
+    margin-bottom: 28px;
 }
 
-.block_gratitude{
+.block_gratitude {
     background: url("../img/bg_gratitude.png") no-repeat center/cover;
     /* background-blend-mode: screen; */
     padding-top: 30px;
@@ -522,12 +512,157 @@ header .wrap {
 }
 
 
-.container_gratitude{
+.container_gratitude {
     margin-top: 30px;
     display: flex;
     justify-content: space-between;
 }
 
-.cg_wrap_img{
+.cg_wrap_img {
 
+}
+
+.block_ratings_and_reviews {
+    background: rgba(241, 241, 241, 1);
+}
+
+/* block_ratings_and_reviews rar */
+.rar_container {
+    margin-top: 37px;
+}
+
+.rar_col {
+    /*display: flex;*/
+}
+
+.rar_col .rar_item {
+    margin-top: 16px;
+}
+
+.rar_col .rar_item:first-child {
+    margin-top: 0;
+}
+
+.rar_item {
+    display: flex;
+    border-radius: 18px;
+    overflow: hidden;
+    width: 100%;
+    height: 127px;
+    box-sizing: border-box;
+    background: #ffffff;
+    padding: 15px;
+    padding-bottom: 12px;
+    position: relative;
+}
+
+.rar_item_wrap_img {
+    width: 92px;
+    height: 92px;
+    border-radius: 100%;
+    overflow: hidden;
+    border: 1px solid #ECECEC;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+
+.rar_item_wrap_img img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-position: center;
+}
+
+.rar_item_info {
+    margin-left: 6px;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.rar_item_title {
+    font-size: 16px;
+    height: 32px;
+}
+
+.rar_item_text {
+    font-size: 14px;
+    max-height: 40px;
+    overflow: hidden;
+}
+
+.rar_item_wrap_star {
+    display: flex;
+    margin-top: auto;
+}
+
+.wrap_star_img {
+    margin-right: 5px;
+    /*outline:1px solid red;*/
+    width: 20px;
+    height: 20px;
+}
+
+.wrap_star_img img {
+    object-fit: contain;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+.rar_container.slick-slider {
+    margin: 0 auto;
+    margin-top: 38px;
+}
+
+.rar_container.slick-slider .slick-slide {
+    margin: 0 10px;
+
+}
+
+.rar_container.slick-slider .slick-list {
+    margin-left: -11px;
+    margin-right: -11px;
+}
+
+.rar_container.slick-slider .slick-item {
+
+}
+
+/*.slick-arrow.slick-prev {*/
+/*    !* left: 0; *!*/
+/*    background: url("https://img.icons8.com/ios/50/000000/long-arrow-left.png") 0 0 / 100% no-repeat;*/
+/*}*/
+/*.slick-arrow.slick-next {*/
+/*    !* right: 0; *!*/
+/*    background: url("https://img.icons8.com/ios/50/000000/long-arrow-right.png") 0 0 / 100% no-repeat;*/
+/*}*/
+
+
+.slick-prev:before {
+    content: "<";
+    color: red;
+    font-size: 30px;
+}
+
+.slick-next:before,
+.slick-prev:before{
+    content: "";
+    background: url("../img/arrow.png") no-repeat center / contain;
+    display: block;
+    width: 16px;
+    height: 32px;
+    font-size: 30px;
+    /*outline: 1px solid red;*/
+    top:-8px;
+    position:absolute
+}
+
+.slick-prev:before{
+    left:-25px;
+}
+
+.slick-next:before {
+    transform: rotate(180deg);
+    right:-25px;
 }
