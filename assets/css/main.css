@@ -760,22 +760,23 @@ header .wrap {
     background: rgba(241, 241, 241, 1);
 }
 
-.bt_container{
-    margin-top:30px;
+.bt_container {
+    margin-top: 30px;
 }
 
-.bt_item{
+.bt_item {
     width: 174px;
     height: 220px;
     text-align: center;
 }
 
 .bt_avatar_wrap {
+    overflow: hidden;
     width: 174px;
     height: 174px;
     border-radius: 100%;
-    overflow: hidden;
 }
+
 .bt_avatar_wrap img {
     width: 100%;
     height: 100%;
@@ -783,14 +784,14 @@ header .wrap {
     object-position: center;
 }
 
-.bt_item_name{
-    margin-top: 7px;
+.bt_item_name {
     font-size: 16px;
+    margin-top: 7px;
 }
 
-.bt_item_experience{
-    margin-top: 3px;
+.bt_item_experience {
     font-size: 14px;
+    margin-top: 3px;
 }
 
 .bt_container.slick-slider .slick-slide {
@@ -800,4 +801,46 @@ header .wrap {
 .bt_container.slick-slider .slick-list {
     margin-right: -34px;
     margin-left: -34px;
+}
+
+
+/*bom*/
+.block_our_mugs {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    color: #ffffff;
+    background: url("../img/bg_bom.png") no-repeat center/cover, rgb(45 36 54 / 44%);
+    background-blend-mode: color-burn;
+}
+
+.bom_container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.bom_item {
+    width: 270px;
+}
+
+.bom_item_wrap_img {
+    overflow: hidden;
+    width: 100%;
+    height: 152px;
+    border-radius: 30px;
+}
+
+.bom_item_wrap_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.bom_item_title {
+    font-size: 18px;
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+    color: #fff;
 }
