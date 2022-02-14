@@ -9,7 +9,6 @@ a {
 .wrap {
     width: 1145px;
     margin: 0 auto;
-    outline: 1px solid red;
 }
 
 /*template*/
@@ -161,6 +160,7 @@ header .wrap {
 .header_tell {
     font-size: 18px;
     line-height: 16px;
+    margin-left: 10px;
 }
 
 .header_contact {
@@ -170,7 +170,6 @@ header .wrap {
 
 .block_map {
     height: 475px;
-    outline: 1px solid red;
 }
 
 .block_children_circles {
@@ -474,7 +473,6 @@ header .wrap {
     justify-content: space-between;
     margin-top: 38px;
     margin-bottom: -28px;
-    outline: 1px solid red;
 }
 
 .cwt_item a {
@@ -843,4 +841,98 @@ header .wrap {
     margin-top: 10px;
     text-align: center;
     color: #fff;
+}
+
+/*footer*/
+footer {
+    padding-top: 50px;
+    padding-bottom: 100px;
+    color: #ffffff;
+    background: rgba(78, 53, 103, 1);
+}
+
+footer a {
+    color: #ffffff;
+}
+
+.footer_container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.f_col {
+}
+
+.footer_title {
+    font-size: 20px;
+    height: 40px;
+    max-width: 250px;
+    line-height: 1.2;
+}
+
+.f_line {
+    width: 1px;
+    border-left: 1px solid #ffffff;
+    /* margin: 0 auto; */
+    /* margin-right: 70px; */
+}
+
+.footer_wrap_menu_1,
+.footer_wrap_menu_2{
+    margin-top: 30px;
+}
+
+.fwm1_ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -14px;
+}
+
+.fwm1_ul a {
+    display: block;
+    width: 170px;
+    margin-top: 14px;
+}
+
+.f_best_offer {
+    line-height: 1.2;
+    height: 35px;
+    margin-top: 20px;
+    padding-left: 38px;
+    background: url("../img/medal.png") no-repeat left center/ auto 100%;
+}
+
+.f_col {
+    width: 340px;
+}
+
+.fwm2_ul {
+    display: flex;
+    flex-direction: column;
+    margin-top: -14px;
+}
+
+.fwm2_ul a {
+    display: block;
+    width: 170px;
+    margin-top: 14px;
+}
+
+.f_col3 {
+    width: 230px;
+    text-align: right;
+}
+
+.f_adress {
+    margin-top: 14px;
+}
+
+.f_soc {
+    margin-top: 14px;
+}
+
+.f_sitemap {
+    font-size: 14px;
+    display: block;
+    margin-top: 20px;
 }
