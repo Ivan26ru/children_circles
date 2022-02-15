@@ -25,19 +25,34 @@ a {
 }
 
 .read_more_orange {
-    padding: 0 22px;
     margin-top: auto;
     margin-left: auto;
+    padding: 0 22px;
     text-transform: uppercase;
 }
 
-.text_orange{
-    color:#DA5B3C;
+.text_orange {
+    color: #DA5B3C;
 }
 
-hr{
+.text_quite {
+    font-size: 20px;
+    display: block;
+    box-sizing: border-box;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 30px 70px;
+    text-align: center;
+    color: #DA5B3C;
+    border: 1px solid #DA5B3C;
+    border-radius: 30px;
+    background: url("../img/icon_text_quite.png") no-repeat left 24px top 10px / 30px auto,
+    url("../img/icon_text_quite_bottom.png") no-repeat right 24px bottom 10px / 30px auto;;
+}
+
+hr {
     border: none;
-    border-top:1px solid #0000003b;
+    border-top: 1px solid #0000003b;
 }
 
 .icon_fire {
@@ -952,21 +967,23 @@ footer a {
 
 .bcc_content img {
     max-width: 100%;
+    height: auto;
+    border-radius: 30px;
 }
 
 .sidebar_left {
     flex-grow: 0;
     flex-shrink: 0;
     box-sizing: border-box;
-    width: 190px;
-    padding-right: 20px;
+    width: 200px;
+    padding-right: 30px;
 }
 
 .sidebar_right {
     flex-grow: 0;
     flex-shrink: 0;
-    width: 200px;
     box-sizing: border-box;
+    width: 200px;
     padding-left: 25px;
 }
 
@@ -1065,26 +1082,43 @@ footer a {
     color: #000000;
 }
 
-.sr_title{
+.sr_title {
     font-size: 25px;
 }
 
-.sr_info{
-    margin-top: 20px;
+.sr_info {
     font-size: 18px;
+    margin-top: 20px;
 }
 
-.sr_discount{
+.sr_discount {
     font-size: 28px;
 }
 
-.sr_discount span{
-    color:#DA5B3C;
+.sr_discount span {
     text-decoration: line-through;
+    color: #DA5B3C;
 }
 
-.btn_find_out_more{
+.btn_find_out_more {
+    font-size: 16px;
     width: 100%;
     margin-top: 20px;
+}
+
+.bc_title {
+    font-size: 31px;
+    padding-left: 50px;
+    background: url("../img/icon_info.png") no-repeat left 10px center/ 30px;
+}
+
+.bc_content {
+    margin-top: 20px;
+}
+
+.bcc_content {
     font-size: 16px;
+    line-height: 1.2;
+    display: block;
+    margin-top: 10px;
 }
