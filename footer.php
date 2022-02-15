@@ -61,8 +61,7 @@
 <script src="assets/libs/html5shiv/es5-shim.min.js"></script>
 <script src="assets/libs/html5shiv/html5shiv.min.js"></script>
 <script src="assets/libs/html5shiv/html5shiv-printshiv.min.js"></script>
-<script src="assets/libs/respond/respond.min.js"></script>
-<![endif]-->
+<script src="assets/libs/respond/respond.min.js"></script><![endif]-->
 
 <!--<script src="assets/libs/jquery/jquery-1.11.2.min.js"></script>-->
 <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
@@ -73,5 +72,4 @@
 <script src="assets/js/main.js"></script>
 
 
-</body>
-</html>
+</body></html>

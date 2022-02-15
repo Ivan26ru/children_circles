@@ -98,7 +98,7 @@
 								<li>Помощь преподавателей</li>
 								<li>Оплата по договору</li>
 							</ul>
-							<a href="#" class="bpsd_ic_block_read_more read_more_orange">Подробнее</a>
+							<a href="#" class="bpsd_ic_block_read_more read_more_orange btn_orange">Подробнее</a>
 						</div>
 					</div>
 				<?php } ?>
@@ -183,7 +183,7 @@
 					</div>
 					<p class="bso_ic_title">Пробное занятие бесплатно</p>
 					<p class="bso_card_text">Попробуйте бесплатно</p>
-					<a href="#" class="bso_ic_block_read_more read_more_orange">Подробнее</a>
+					<a href="#" class="bso_ic_block_read_more read_more_orange btn_orange">Подробнее</a>
 					<div class="icon_fire">
 						<img src="assets/img/fire.png" alt="">
 					</div>
