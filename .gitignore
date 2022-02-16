@@ -6,9 +6,11 @@
 /wp-content/languages/
 /wp-content/uploads/
 /wp-content/backups-dup-lite/
+/wp-content/themes/twentytwenty/
 /.htaccess
 /license.txt
 /readme.html
+/index.php
 /wp-activate.php
 /wp-blog-header.php
 /wp-comments-post.php
@@ -24,4 +26,3 @@
 /wp-trackback.php
 /xmlrpc.php
 /.idea/
-/wp-content/themes/twentytwenty/
