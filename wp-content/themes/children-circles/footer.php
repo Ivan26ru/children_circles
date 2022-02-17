@@ -1,0 +1,74 @@
+<?php
+/**
+ * Шаблон подвала (footer.php)
+ * @package WordPress
+ * @subpackage this_my_theme
+ */
+?>
+<footer>
+	<div class="wrap">
+		<div class="footer_container">
+			<div class="f_col f_col1">
+				<p class="footer_title">СТУДИЯ ДОШКОЛЬНОГО ОБРАЗОВАНИЯ</p>
+				<div class="footer_wrap_menu_1">
+					<ul class="fwm1_ul">
+						<li><a href="#">Цены</a></li>
+						<li><a href="#">Скидки</a></li>
+						<li><a href="#">Порядок обучения</a></li>
+						<li><a href="#">Контакты</a></li>
+						<li><a href="#">Акции</a></li>
+						<li><a href="#">О нас</a></li>
+					</ul>
+					<p class="f_best_offer">Лучшее предложение в Москве</p>
+				</div>
+			</div>
+			<div class="f_line"></div>
+			<div class="f_col f_col2">
+				<p class="footer_title">Кружки</p>
+				<div class="footer_wrap_menu_2">
+					<ul class="fwm2_ul">
+						<li>
+							<a href="#">ИЗО</a>
+							<a href="#">Раннее развитие</a>
+							<a href="#">Английский язык</a>
+							<a href="#">Дошкольная подготовка</a>
+							<a href="#">Театральная студия</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="f_line"></div>
+			<div class="f_col f_col3">
+				<a href="#" class="block_logo">
+					<div class="wrap_logo">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/img/circle.png" alt="">
+					</div>
+					<div class="block_logo_text">
+						<p class="blt_title">Детские кружки</p>
+						<div class="blt_line"></div>
+						<p class="blt_description">Детские кружки в Москве</p>
+					</div>
+				</a>
+				<p class="f_adress">г.Москва, ул.Степана Супруна, д.4</p>
+				<div class="f_soc">
+					<p class="header_soc">
+						<a href="#" class="header_logo_soc"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/tg.png" alt=""></a>
+						<a href="#" class="header_logo_soc"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/ws.png" alt=""></a>
+						<a href="#" class="header_tell">8 (800) 758-770-02</a>
+					</p>
+				</div>
+				<p class="header_contact">с 8:00 до 22:00</p>
+				<a href="#" class="f_sitemap">Карта сайта</a>
+			</div>
+		</div>
+	</div>
+</footer>
+<?php wp_footer(); // необходимо для работы плагинов и функционала  ?>
+
+<!--[if lt IE 9]>
+<script src="<?php echo get_template_directory_uri(); ?>/assets/libs/html5shiv/es5-shim.min.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/assets/libs/html5shiv/html5shiv.min.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/assets/libs/html5shiv/html5shiv-printshiv.min.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/assets/libs/respond/respond.min.js"></script><![endif]-->
+</body>
+</html>
