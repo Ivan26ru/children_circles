@@ -8,12 +8,12 @@
 					<?php
 					// Вставка меню в тему
 					$args = array(
-						'theme_location'  => 'sl_menu1', // область темы
-						'container'       => 'div', // блок, в который нужно поместить меню, укажите false, чтобы не помещать в блок
-						'container_class' => 'sl_menu', // css-класс блока div
-						'menu_class'      => 'sl_menu_ul', // css-класс ul
-						'echo'            => true, // вывести или записать в переменную
-						'depth'           => 0 // количество уровней вложенности
+							'theme_location'  => 'sl_menu1', // область темы
+							'container'       => 'div', // блок, в который нужно поместить меню, укажите false, чтобы не помещать в блок
+							'container_class' => 'sl_menu', // css-класс блока div
+							'menu_class'      => 'sl_menu_ul', // css-класс ul
+							'echo'            => true, // вывести или записать в переменную
+							'depth'           => 0 // количество уровней вложенности
 					);
 
 					wp_nav_menu($args);
@@ -25,12 +25,12 @@
 					<?php
 					// Вставка меню в тему
 					$args = array(
-						'theme_location'  => 'sl_menu2', // область темы
-						'container'       => 'div', // блок, в который нужно поместить меню, укажите false, чтобы не помещать в блок
-						'container_class' => 'sl_menu', // css-класс блока div
-						'menu_class'      => 'sl_menu_ul', // css-класс ul
-						'echo'            => true, // вывести или записать в переменную
-						'depth'           => 0 // количество уровней вложенности
+							'theme_location'  => 'sl_menu2', // область темы
+							'container'       => 'div', // блок, в который нужно поместить меню, укажите false, чтобы не помещать в блок
+							'container_class' => 'sl_menu', // css-класс блока div
+							'menu_class'      => 'sl_menu_ul', // css-класс ul
+							'echo'            => true, // вывести или записать в переменную
+							'depth'           => 0 // количество уровней вложенности
 					);
 
 					wp_nav_menu($args);
@@ -60,8 +60,20 @@
 					?>
 				</div>
 				<div class="bc_content">
-					<p class="bc_title"><?php the_title(); ?></p>
-					<div class="bcc_content"><?php the_content(); ?></div>
+					<p class="bc_title">
+						<?php if (is_category()) {
+							single_cat_title(); // название категории
+						} else {
+							the_title();
+						} ?>
+					<div class="bcc_content">
+						<?php if (is_category()) {
+							$catID = get_query_var('cat');
+							if ($cat_desc = category_description($catID)) echo $cat_desc;
+						} else {
+							the_content();
+						} ?>
+					</div>
 				</div>
 			</div>
 			<div class="sidebar_right">
