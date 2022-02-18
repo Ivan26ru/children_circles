@@ -32,7 +32,7 @@
 <body <?php body_class(); // все классы для body ?>>
 <header>
 	<div class="wrap">
-		<a href="#" class="block_logo">
+		<a href="<?php echo get_site_url(); ?>" class="block_logo">
 			<div class="wrap_logo">
 				<img src="<?php echo get_template_directory_uri(); ?>/assets/img/circle.png" alt="">
 			</div>
@@ -49,16 +49,19 @@
 					Лицензия 77Л01 №0010539</a>
 			</div>
 			<div class="hc_line2">
-				<div class="menu_header">
-					<ul class="menu_header_ul">
-						<li><a href="#">Цены</a></li>
-						<li><a href="#">Обучение</a></li>
-						<li><a href="#">Секции</a></li>
-						<li><a href="#">Контакты</a></li>
-						<li><a href="#">Акции</a></li>
-						<li><a href="#">О нас</a></li>
-					</ul>
-				</div>
+				<?php
+				// Вставка меню в тему
+				$args = array(
+						'theme_location' => 'top', // область темы
+						'container' => 'div', // блок, в который нужно поместить меню, укажите false, чтобы не помещать в блок
+						'container_class' => 'menu_header', // css-класс блока div
+						'menu_class' => 'menu_header_ul', // css-класс ul
+						'echo' => true, // вывести или записать в переменную
+						'depth' => 0 // количество уровней вложенности
+				);
+
+				wp_nav_menu($args);
+				?>
 			</div>
 		</div>
 		<div class="header_info">

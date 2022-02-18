@@ -10,32 +10,37 @@
 		<div class="footer_container">
 			<div class="f_col f_col1">
 				<p class="footer_title">СТУДИЯ ДОШКОЛЬНОГО ОБРАЗОВАНИЯ</p>
-				<div class="footer_wrap_menu_1">
-					<ul class="fwm1_ul">
-						<li><a href="#">Цены</a></li>
-						<li><a href="#">Скидки</a></li>
-						<li><a href="#">Порядок обучения</a></li>
-						<li><a href="#">Контакты</a></li>
-						<li><a href="#">Акции</a></li>
-						<li><a href="#">О нас</a></li>
-					</ul>
-					<p class="f_best_offer">Лучшее предложение в Москве</p>
-				</div>
+				<?php
+				// Вставка меню в тему
+				$args = array(
+						'theme_location'  => 'footer1', // область темы
+						'container'       => 'div', // блок, в который нужно поместить меню, укажите false, чтобы не помещать в блок
+						'container_class' => 'footer_wrap_menu_1', // css-класс блока div
+						'menu_class'      => 'fwm1_ul', // css-класс ul
+						'echo'            => true, // вывести или записать в переменную
+						'depth'           => 0 // количество уровней вложенности
+				);
+
+				wp_nav_menu($args);
+				?>
+				<p class="f_best_offer">Лучшее предложение в Москве</p>
 			</div>
 			<div class="f_line"></div>
 			<div class="f_col f_col2">
 				<p class="footer_title">Кружки</p>
-				<div class="footer_wrap_menu_2">
-					<ul class="fwm2_ul">
-						<li>
-							<a href="#">ИЗО</a>
-							<a href="#">Раннее развитие</a>
-							<a href="#">Английский язык</a>
-							<a href="#">Дошкольная подготовка</a>
-							<a href="#">Театральная студия</a>
-						</li>
-					</ul>
-				</div>
+				<?php
+				// Вставка меню в тему
+				$args = array(
+						'theme_location'  => 'footer2', // область темы
+						'container'       => 'div', // блок, в который нужно поместить меню, укажите false, чтобы не помещать в блок
+						'container_class' => 'footer_wrap_menu_2', // css-класс блока div
+						'menu_class'      => 'fwm2_ul', // css-класс ul
+						'echo'            => true, // вывести или записать в переменную
+						'depth'           => 0 // количество уровней вложенности
+				);
+
+				wp_nav_menu($args);
+				?>
 			</div>
 			<div class="f_line"></div>
 			<div class="f_col f_col3">
