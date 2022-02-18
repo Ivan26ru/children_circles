@@ -53,7 +53,12 @@
 				</div>
 			</div>
 			<div class="bc_wrap">
-				<div class="bc_item_breadcrumbs">хлебные крошки</div>
+				<div class="bc_item_breadcrumbs">                    <?php
+					if (function_exists('yoast_breadcrumb')) {
+						yoast_breadcrumb('<p id="breadcrumbs" class="breadcrumbs">', '</p>');
+					}
+					?>
+				</div>
 				<div class="bc_content">
 					<p class="bc_title"><?php the_title(); ?></p>
 					<div class="bcc_content"><?php the_content(); ?></div>
