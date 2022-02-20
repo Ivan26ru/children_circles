@@ -7,8 +7,7 @@
 
 			// Check rows exists.
 			if (have_rows('ratings_and_reviews_item', 'option')):
-				$count = true;
-				?>
+				$count = 0; ?>
 				<div class="rar_col">
 				<?php
 				// Loop through rows.
@@ -21,7 +20,18 @@
 					$description = get_sub_field('description');
 					$stars_count = get_sub_field('stars_count');
 
-					?>
+
+					if ($count == 0) {
+						$count = 1;
+					} elseif ($count == 1) {
+						$count = 2;
+					} else {
+						$count = 1;
+						?>
+						</div><div class="rar_col">
+						<?php
+					} ?>
+
 
 					<div class="rar_item">
 						<div class="rar_item_wrap_img">
@@ -40,16 +50,8 @@
 						</div>
 					</div>
 
-					<?php
+				<?php
 
-					if ($count) {
-						$count = false; ?>
-
-					<?php } else {
-						$count = true; ?>
-						</div><div class="rar_col">
-						<?php
-					}
 					// End loop.
 				endwhile; ?>
 				</div>
