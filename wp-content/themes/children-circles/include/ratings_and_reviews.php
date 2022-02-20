@@ -25,7 +25,7 @@
 
 					<div class="rar_item">
 						<div class="rar_item_wrap_img">
-							<img src="<?php echo $avatar; ?>" alt="">
+							<?php echo $avatar; ?>
 						</div>
 						<div class="rar_item_info">
 							<p class="rar_item_title"><?php echo $name; ?></p>
