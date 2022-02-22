@@ -351,6 +351,12 @@ header .wrap {
     box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
 }
 
+.btl_item_total_old {
+    font-weight: 100;
+    text-decoration: line-through;
+    color: #DA5B3C;
+}
+
 .bcc_item_wrap_img {
     overflow: hidden;
     width: 72px;
