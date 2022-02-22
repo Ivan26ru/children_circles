@@ -407,6 +407,9 @@ header .wrap {
     text-align: center;
 }
 
+
+
+.popup_form input[type="submit"],
 .form_map input[type="submit"],
 .btl_form input[type="submit"] {
     font-size: 14px;
@@ -1229,18 +1232,32 @@ footer a {
     object-position: center;
 }
 
-.bltwu_block_1_item .bltwu_btn_youtube{
+.bltwu_block_1_item .bltwu_btn_youtube {
     /*outline: 1px solid red;*/
-    object-fit: none;
+    position: absolute;
+    top: calc(50% - 31px);
+    left: calc(50% - 44px);
     width: 88px;
     height: 62px;
-    position: absolute;
-    top:calc(50% - 31px);
-    left: calc(50% - 44px)
+    object-fit: none;
 }
 
 
 /* cf7 */
-.wpcf7-response-output{
+.wpcf7-response-output {
     display: none;
+}
+
+.popup_form_title {
+    font-size: 26px;
+    text-align: center;
+}
+
+.popup_form input {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 30px;
 }
