@@ -432,7 +432,8 @@ header .wrap {
 
 .block_trial_lesson {
     padding-bottom: 20px;
-    background: url("assets/img/bg_trial_lesson.png") no-repeat center/cover, rgb(45 36 54 / 44%);
+    background: url("assets/img/bg_probnoe.png") no-repeat center/cover;
+    /*background: url("assets/img/bg_probnoe.png") no-repeat center/cover, rgb(45 36 54 / 44%);*/
     background-blend-mode: color-burn;
 }
 
@@ -1398,4 +1399,11 @@ footer a {
 
 .form_map .my_cf7_form input[type="submit"] {
     margin-top: 30px;
+}
+
+.block_seo_1 img,
+.block_seo_2 img {
+    overflow: hidden;
+    max-width: 100%;
+    border-radius: 30px;
 }
