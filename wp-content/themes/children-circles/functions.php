@@ -125,7 +125,7 @@ if (!function_exists('add_styles')) { // если ф-я уже есть в до�
 		wp_enqueue_style('main_fonts', get_template_directory_uri() . '/assets/fonts/fonts.css');
 		wp_enqueue_style('slick', get_template_directory_uri() . '/assets/libs/slick/slick.css');
 		wp_enqueue_style('slick-theme', get_template_directory_uri() . '/assets/libs/slick/slick-theme.css');
-		wp_enqueue_style('main', get_template_directory_uri() . '/style.css');
+		wp_enqueue_style('main', get_template_directory_uri() . '/style.css?' . date('U'));
 		wp_enqueue_style('main_media', get_template_directory_uri() . '/assets/css/media.css');
 	}
 }
@@ -155,3 +155,9 @@ if (function_exists('acf_add_options_page')) {
 //	));
 
 }
+
+// Method 2: Setting.
+function my_acf_init() {
+	acf_update_setting('google_api_key', 'AIzaSyC4vEAW-s167o-qcgYjo_mpm-Zd50vjCww');
+}
+add_action('acf/init', 'my_acf_init');
