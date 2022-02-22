@@ -34,7 +34,7 @@
 	<div class="wrap">
 		<a href="<?php echo get_site_url(); ?>" class="block_logo">
 			<div class="wrap_logo">
-				<img src="<?php echo get_template_directory_uri(); ?>/assets/img/circle.png" alt="">
+				<img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png" alt="">
 			</div>
 			<div class="block_logo_text">
 				<p class="blt_title">Детские кружки</p>
