@@ -121,6 +121,7 @@ if (!function_exists('add_styles')) { // если ф-я уже есть в до�
 	function add_styles()
 	{ // добавление стилей
 		wp_enqueue_style('main_reset', get_template_directory_uri() . '/assets/css/reset.css');
+		wp_enqueue_style('style_wp', get_template_directory_uri() . '/assets/css/style_wp.css');
 		wp_enqueue_style('font-awesome.min', get_template_directory_uri() . '/assets/css/font-awesome.min.css');
 		wp_enqueue_style('main_fonts', get_template_directory_uri() . '/assets/fonts/fonts.css');
 		wp_enqueue_style('slick', get_template_directory_uri() . '/assets/libs/slick/slick.css');
