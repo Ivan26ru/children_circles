@@ -21,7 +21,7 @@
 						</div>
 						<p class="bso_ic_title"><?php echo $title; ?></p>
 						<p class="bso_card_text"><?php echo $description; ?></p>
-						<a href="#" class="bso_ic_block_read_more read_more_orange btn_orange">Подробнее</a>
+						<a href="#" class="bso_ic_block_read_more">Подробнее</a>
 						<div class="icon_fire">
 							<img src="<?php echo get_template_directory_uri(); ?>/assets/img/fire.png" alt="">
 						</div>
