@@ -109,4 +109,9 @@ jQuery(document).ready(function ($) { //ожидание полной загру
         }, false);
     })
 
+    $('.block_map input[type="submit"], .bso_item_card, .bpsd_ic_block').bind('click', function(event) {
+        event.preventDefault();//убираем стандартное поведение
+        PUM.open('114');
+    });
+
 }); //конец ready
