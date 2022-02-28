@@ -11,7 +11,7 @@
     .wrap_small,
     .wrap {
         /*overflow-x: hidden;*/
-        width: calc(100% - 25px);
+        width: calc(100% - 45px);
         margin: 0 auto;
     }
 
@@ -188,10 +188,10 @@
     }
 
     .f_col .block_logo {
-        width: 215px;
+        width: auto;
         margin-right: 0;
         margin-left: auto;
-        /* text-align: right; */
+        justify-content: flex-end;
     }
 
     .block_bottom_mobile {
