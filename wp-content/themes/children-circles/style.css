@@ -7,6 +7,9 @@ Description: this_my_theme
 Author: Ivan
 Author URI: https://vk.com/ivan26ru
 */
+* {
+    /*outline:1px solid red;*/
+}
 
 body {
     font-family: Calibri, sans-serif;
@@ -157,6 +160,7 @@ footer a:hover {
     color: #DA5B3C;
 }
 
+blockquote,
 .text_quite {
     font-size: 20px;
     display: block;
@@ -567,9 +571,9 @@ header .wrap {
     margin-top: 23px;
     padding: 20px;
     padding-top: 23px;
+    cursor: pointer;
     border-radius: 12px;
     background: #ffffff;
-    cursor: pointer;
 }
 
 .bpsd_ic_name_list {
@@ -686,8 +690,8 @@ header .wrap {
 
 
 .container_gratitude {
-    display: flex;
-    justify-content: space-between;
+    /*display: flex;*/
+    /*justify-content: space-between;*/
     margin-top: 30px;
 }
 
@@ -876,10 +880,10 @@ header .wrap {
     height: 355px;
     margin-top: 30px;
     padding: 15px 14px;
+    cursor: pointer;
     border: 1px solid #FFFFFF33;
     border-radius: 18px;
     background: rgba(255, 255, 255, 0.4);
-    cursor: pointer;
 }
 
 .bso_item_card:hover {
@@ -1152,6 +1156,7 @@ footer a {
 
 .block_content {
     padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .sl_menu_title {
@@ -1302,6 +1307,7 @@ footer a {
 
 .block_map .wrap {
     position: relative;
+    height: 100%;
 }
 
 .form_map1 .form_title {
@@ -1503,12 +1509,48 @@ footer a {
     display: block;
 }
 
-.btn_open_popup{
-    position:fixed;
-    top:10px;
-    right:50px;
-    z-index:333333;
-    line-height:30px;
-    padding:0 10px;
-    display:none;
+.btn_open_popup {
+    line-height: 30px;
+    position: fixed;
+    z-index: 333333;
+    top: 10px;
+    right: 50px;
+    display: none;
+    padding: 0 10px;
+}
+
+.block_bottom_mobile {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: none;
+    width: 100%;
+    border-top: 1px solid rgba(101, 101, 101, 0.5);
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.bbm_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+}
+
+.bbm_btn {
+    font-size: 18px;
+    padding: 10px;
+    text-transform: uppercase;
+    color: #ffffff;
+    border-radius: 30px;
+    margin: 0 10px;
+}
+
+.bbm_green {
+    /*width: 28%;*/
+    background: rgba(70, 186, 113, 0.7);
+}
+
+.bbm_call {
+    /*width: 50%;*/
+    background: #D4382C;
 }

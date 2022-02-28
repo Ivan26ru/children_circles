@@ -68,6 +68,7 @@
 		</div>
 	</div>
 </footer>
+<?php include "include/block_bottom_mobile.php"; ?>
 <?php wp_footer(); // необходимо для работы плагинов и функционала  ?>
 
 <!--[if lt IE 9]>

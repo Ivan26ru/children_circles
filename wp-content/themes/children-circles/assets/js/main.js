@@ -109,7 +109,7 @@ jQuery(document).ready(function ($) { //ожидание полной загру
         }, false);
     })
 
-    $('.block_map input[type="submit"], .bso_item_card, .bpsd_ic_block').bind('click', function(event) {
+    $('.block_map input[type="submit"], .bso_item_card, .bpsd_ic_block, .btn_find_out_more').bind('click', function(event) {
         event.preventDefault();//убираем стандартное поведение
         PUM.open('114');
     });

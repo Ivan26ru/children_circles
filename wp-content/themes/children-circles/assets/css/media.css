@@ -1,9 +1,16 @@
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1270px) {
+
+    /*.bcc_container,*/
+    /*.rar_container,*/
+    /*.bt_container,*/
+    /*.container_gratitude{*/
+    /*    display: none;*/
+    /*}*/
     .wrap_small,
     .wrap {
-        overflow-x: hidden;
+        /*overflow-x: hidden;*/
         width: calc(100% - 25px);
         margin: 0 auto;
     }
@@ -29,11 +36,11 @@
     }
 
     .slick-prev {
-        left: -10px;
+        left: -20px;
     }
 
     .slick-next {
-        right: -10px;
+        right: -20px;
     }
 
 
@@ -79,7 +86,17 @@
     }
 
     .slick-slider {
-        width: calc(100% - 20px);
+        width: calc(100% - 50px);
+        margin: 0 auto;
+    }
+
+    .sidebar_right,
+    .sidebar_left {
+        display: none;
+    }
+
+    .bc_wrap {
+        width: 100%;
     }
 }
 
@@ -91,6 +108,7 @@
 
     .btl_container {
         flex-wrap: wrap;
+        justify-content: space-around;
     }
 
     .bltwu_block_2_cf7, .btl_form {
@@ -174,6 +192,14 @@
         margin-right: 0;
         margin-left: auto;
         /* text-align: right; */
+    }
+
+    .block_bottom_mobile {
+        display: block;
+    }
+
+    footer{
+        margin-bottom: 60px;
     }
 }
 
