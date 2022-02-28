@@ -694,6 +694,7 @@ header .wrap {
     overflow: hidden;
     width: 207px;
     height: 287px;
+    margin: 0 auto;
 }
 
 .cg_wrap_img img {
