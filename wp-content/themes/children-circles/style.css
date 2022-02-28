@@ -144,6 +144,8 @@ select, input {
     font-size: 14px;
 }
 
+.bp_readmore:hover,
+.rar_read_more:hover,
 .bcc_item_read_more_a:hover,
 footer a:hover {
     color: #DA5B3C;
@@ -373,6 +375,8 @@ header .wrap {
     height: 72px;
     border: 1px solid #ECECEC;
     border-radius: 100%;
+    flex-shrink: 0;
+    flex-grow: 0;
 }
 
 .bcc_item_wrap_img img {
@@ -385,6 +389,9 @@ header .wrap {
 .bcc_item_info {
     margin-right: auto;
     margin-left: 20px;
+    flex-direction: column;
+    display: flex;
+    flex-grow: 1;
 }
 
 .bcc_item_title {
@@ -701,7 +708,6 @@ header .wrap {
     background: rgba(241, 241, 241, 1);
 }
 
-/* block_ratings_and_reviews rar */
 .rar_container {
     margin-top: 37px;
 }
@@ -728,7 +734,7 @@ header .wrap {
     padding: 15px;
     padding-bottom: 12px;
     border: 1px solid rgba(0, 0, 0, 0.2);
-    border-radius: 18px;
+    border-radius: 100px;
     background: #ffffff;
 }
 
@@ -752,6 +758,7 @@ header .wrap {
 .rar_item_info {
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
     margin-right: auto;
     margin-left: 6px;
 }
@@ -1461,4 +1468,25 @@ footer a {
 .vrh_item {
     overflow: hidden;
     border-radius: 30px;
+}
+
+.rar_read_more {
+    margin-top: auto;
+    margin-left: auto;
+    color: initial;
+}
+
+.block_posts {
+    padding-top: 30px;
+    padding-bottom: 29px;
+    background: url("assets/img/bg_gratitude.png") no-repeat center/cover;
+
+}
+
+.bp_readmore{
+    margin-top: auto;
+    margin-left: auto;
+    color: initial;
+    font-size: 12px;
+    margin-right: 10px;
 }
