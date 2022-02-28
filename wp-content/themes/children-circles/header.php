@@ -30,6 +30,7 @@
 	<?php wp_head(); // необходимо для работы плагинов и функционала ?>
 </head>
 <body <?php body_class(); // все классы для body ?>>
+<a href="#" class="btn_orange btn_open_popup popmake-114">Записаться</a>
 <header>
 	<div class="wrap">
 		<a href="<?php echo get_site_url(); ?>" class="block_logo">
