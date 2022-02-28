@@ -19,7 +19,7 @@
 			function <?php echo $yandexMapInit ?>() {
 				var myMap = new ymaps.Map(<?php echo $yandexMapAttrId ?>, {
 					center: [55.76, 37.64],
-					zoom: 10
+					zoom: 11
 				}, {
 					searchControlProvider: 'yandex#search'
 				});
@@ -39,7 +39,7 @@
 				while ($query->have_posts()) {
 				$query->the_post();?>
 						.add(new ymaps.Placemark([<?php the_field('lat'); ?>, <?php the_field('lng'); ?>], {
-							// balloonContent: '',
+							//balloonContent: '<?php //the_content(); ?>//',
 							iconCaption: '<?php the_title(); ?>',
 						}, {
 							preset: 'islands#dotIcon',
