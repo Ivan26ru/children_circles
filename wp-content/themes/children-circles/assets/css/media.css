@@ -12,6 +12,18 @@
         display: none;
     }
 
+    .headertext span {
+        line-height: 1.3;
+        display: flex;
+        align-items: center;
+        width: calc(100% - 160px);
+        height: 50px;
+    }
+
+    .btn_open_popup {
+        display: block;
+    }
+
     .slick-next:before, .slick-prev:before {
         width: 10px;
     }
