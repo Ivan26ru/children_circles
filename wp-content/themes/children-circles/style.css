@@ -569,6 +569,7 @@ header .wrap {
     padding-top: 23px;
     border-radius: 12px;
     background: #ffffff;
+    cursor: pointer;
 }
 
 .bpsd_ic_name_list {
@@ -878,6 +879,7 @@ header .wrap {
     border: 1px solid #FFFFFF33;
     border-radius: 18px;
     background: rgba(255, 255, 255, 0.4);
+    cursor: pointer;
 }
 
 .bso_item_card:hover {
@@ -1499,4 +1501,14 @@ footer a {
 
 #wpcf7-f113-o1 .wpcf7-not-valid-tip {
     display: block;
+}
+
+.btn_open_popup{
+    position:fixed;
+    top:10px;
+    right:50px;
+    z-index:333333;
+    line-height:30px;
+    padding:0 10px;
+    display:none;
 }
