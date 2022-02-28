@@ -14,7 +14,7 @@
 		?>
 
 
-		<div id="<?php echo $yandexMapAttrId; ?>" style="width: 100%; height: 500px"></div>
+		<div id="<?php echo $yandexMapAttrId; ?>" style="width: 100%; height: 100%"></div>
 		<script>
 			function <?php echo $yandexMapInit ?>() {
 				var myMap = new ymaps.Map(<?php echo $yandexMapAttrId ?>, {
