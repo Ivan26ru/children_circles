@@ -14,6 +14,11 @@ Author URI: https://vk.com/ivan26ru
 body {
     font-family: Calibri, sans-serif;
     background: #ffffff;
+    padding-top: 60px;
+}
+
+.admin-bar{
+    padding-top:31px
 }
 
 a {
@@ -147,6 +152,13 @@ select, input {
     font-size: 14px;
 }
 
+.bc_item_breadcrumbs a{
+    color:#000000;
+}
+
+.bc_item_breadcrumbs a:hover,
+.bom_item_title:hover,
+header a:hover,
 .bso_ic_block_read_more:hover,
 .bp_readmore:hover,
 .rar_read_more:hover,
@@ -155,7 +167,8 @@ footer a:hover {
     color: #DA5B3C;
 }
 
-
+.bcc_content a,
+.block_seo a,
 .text_orange {
     color: #DA5B3C;
 }
@@ -165,8 +178,8 @@ blockquote,
     font-size: 20px;
     display: block;
     box-sizing: border-box;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     padding: 30px 70px;
     text-align: center;
     color: #DA5B3C;
@@ -198,6 +211,11 @@ header {
     padding-top: 12px;
     padding-bottom: 10px;
     background: rgba(78, 53, 103, 1);
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index: 1;
 }
 
 header a,
@@ -1272,8 +1290,8 @@ footer a {
 
 .bc_title {
     font-size: 31px;
-    padding-left: 50px;
-    background: url("assets/img/icon_info.png") no-repeat left 10px center/ 30px;
+    padding-left: 40px;
+    background: url("assets/img/icon_info.png") no-repeat left 0px center/ 30px;
 }
 
 .bc_content {
@@ -1285,6 +1303,11 @@ footer a {
     line-height: 1.2;
     display: block;
     margin-top: 10px;
+}
+
+.bcc_content p{
+    margin-top: 10px;
+    text-indent: 30px;
 }
 
 .wpcf7-spinner {
@@ -1465,7 +1488,7 @@ footer a {
 }
 
 .bs_content {
-    font-size: 20px;
+    font-size: 16px;
     line-height: 1;
     margin-top: 20px;
 
@@ -1473,6 +1496,7 @@ footer a {
 
 .bs_content p {
     margin-top: 18px;
+    text-indent: 30px;
 }
 
 .vrh_item {
@@ -1512,8 +1536,8 @@ footer a {
 .btn_open_popup {
     line-height: 30px;
     position: fixed;
-    z-index: 333333;
-    top: 10px;
+    z-index: 10000;
+    top: 15px;
     right: 50px;
     display: none;
     padding: 0 10px;
@@ -1526,7 +1550,7 @@ footer a {
     display: none;
     width: 100%;
     border-top: 1px solid rgba(101, 101, 101, 0.5);
-    background: rgba(255, 255, 255, 0.4);
+    background: rgba(255, 255, 255, 1);
 }
 
 .bbm_container {
@@ -1553,4 +1577,16 @@ footer a {
 .bbm_call {
     /*width: 50%;*/
     background: #D4382C;
+}
+
+.video_resp_shablon{
+    margin-top: 10px;
+}
+
+.alignnone {
+    margin: 10px 0;
+}
+
+.tablepress .sorting:hover, .tablepress .sorting_asc, .tablepress .sorting_desc {
+    background-color: #DA5B3C;
 }
