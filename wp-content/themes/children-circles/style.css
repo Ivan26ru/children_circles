@@ -13,12 +13,12 @@ Author URI: https://vk.com/ivan26ru
 
 body {
     font-family: Calibri, sans-serif;
-    background: #ffffff;
     padding-top: 60px;
+    background: #ffffff;
 }
 
-.admin-bar{
-    padding-top:31px
+.admin-bar {
+    padding-top: 31px
 }
 
 a {
@@ -152,8 +152,8 @@ select, input {
     font-size: 14px;
 }
 
-.bc_item_breadcrumbs a{
-    color:#000000;
+.bc_item_breadcrumbs a {
+    color: #000000;
 }
 
 .bc_item_breadcrumbs a:hover,
@@ -206,16 +206,16 @@ hr {
 }
 
 header {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
     box-sizing: border-box;
+    width: 100%;
     height: 62px;
     padding-top: 12px;
     padding-bottom: 10px;
     background: rgba(78, 53, 103, 1);
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    z-index: 1;
 }
 
 header a,
@@ -1305,7 +1305,7 @@ footer a {
     margin-top: 10px;
 }
 
-.bcc_content p{
+.bcc_content p {
     margin-top: 10px;
     text-indent: 30px;
 }
@@ -1562,11 +1562,11 @@ footer a {
 
 .bbm_btn {
     font-size: 18px;
+    margin: 0 10px;
     padding: 10px;
     text-transform: uppercase;
     color: #ffffff;
     border-radius: 30px;
-    margin: 0 10px;
 }
 
 .bbm_green {
@@ -1579,7 +1579,7 @@ footer a {
     background: #D4382C;
 }
 
-.video_resp_shablon{
+.video_resp_shablon {
     margin-top: 10px;
 }
 
@@ -1589,4 +1589,19 @@ footer a {
 
 .tablepress .sorting:hover, .tablepress .sorting_asc, .tablepress .sorting_desc {
     background-color: #DA5B3C;
+}
+
+
+.sticky {
+    position: fixed;
+    /*z-index: 101;*/
+}
+
+.stop {
+    position: relative;
+    /*z-index: 101;*/
+}
+
+#sidebar_right_container, #sidebar_left_container {
+    padding-bottom: 20px;
 }
