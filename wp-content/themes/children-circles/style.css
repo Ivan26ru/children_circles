@@ -1178,7 +1178,8 @@ footer a {
 }
 
 .sl_menu_title {
-    font-size: 18px;
+    font-size: 20px;
+    text-transform: uppercase;
 }
 
 .sl_item_menu {
@@ -1218,7 +1219,7 @@ footer a {
 
 .sl_menu_ul a:hover {
     border-radius: 54px;
-    background: rgba(255, 112, 81, 0.27);
+    background: rgba(255, 193, 7, 0.3);
 }
 
 .sl_item_map {

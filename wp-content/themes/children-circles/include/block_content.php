@@ -41,7 +41,7 @@
 						<img src="<?php echo get_template_directory_uri(); ?>/assets/img/sl_map.png" alt="">
 					</div>
 					<div class="sl_item_contacts">
-						<p class="f_adress">Центральный офис: Россия, г. Москва</p>
+						<p class="f_adress">Центральный офис:<br>Россия, г. Москва</p>
 						<a href="#" class="sl_tel">8 (800) 758-770-02</a>
 						<div class="sl_work_time">
 							<p class="sl_soc">
