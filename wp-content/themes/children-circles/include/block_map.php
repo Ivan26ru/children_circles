@@ -60,7 +60,7 @@
 		</script>
 
 	</div>
-	<div class="wrap">
+	<div class="wrap pe-n">
 		<div class="form_map">
 			<div class="my_cf7_form my_cf7_magenta">
 				<?php echo do_shortcode(get_field('cf7_map', 'option')); ?></div>

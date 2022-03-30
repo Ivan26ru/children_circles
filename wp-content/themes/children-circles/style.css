@@ -34,6 +34,10 @@ select, input {
     margin: 0 auto;
 }
 
+.pe-n{
+    pointer-events: none;
+}
+
 .wrap_small {
     width: 755px;
     margin: 0 auto;
@@ -1457,6 +1461,7 @@ footer a {
 
 
 .form_map .my_cf7_form {
+    pointer-events: auto;
     background: url("assets/img/icon_search.png") no-repeat right 25px top 25px / 30px auto, #4E3567B2;
 }
 
