@@ -1,7 +1,7 @@
 <div class="block_pre-school_development">
+	<p class="title_block"><?php echo get_field('block_pre-school_development_title', 'option') ?></p>
 	<div class="wrap">
 		<div class="bpsd_container">
-			<p class="title_block"><?php echo get_field('block_pre-school_development_title', 'option') ?></p>
 			<!--			<p class="text_block">Увы, не все родители знают, что в Петербурге много бесплатных кружков и секций для детей. Или думают, что устроить в них ребенка трудно.-->
 			<!--				На самом деле таких кружков много, и они вполне приличного качества. Накануне начала массового набора в них «Литтлван» составил подробную инструкцию, где в разных районах города можно заниматься спортом, наукой, музыкой и рисованием бесплатно. В обзор не вошли художественные, музыкальные и спортивные школы, а также занятия при общеобразовательных школах. О них, полагаем, вы и так знаете. </p>-->
 			<div class="bpsd_wrap_card">
@@ -29,10 +29,10 @@
 								</div>
 								<ul class="bpsd_ic_block_list">
 									<?php if (have_rows($list_item)): while (have_rows($list_item)) :
-											the_row();
-											$text = get_sub_field('text');
-											?>
-											<li><?php echo $text; ?></li>
+										the_row();
+										$text = get_sub_field('text');
+										?>
+										<li><?php echo $text; ?></li>
 									<?php endwhile; endif; ?>
 								</ul>
 								<a href="#" class="bpsd_ic_block_read_more read_more_orange btn_orange">Подробнее</a>

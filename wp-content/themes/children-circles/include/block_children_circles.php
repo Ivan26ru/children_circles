@@ -1,6 +1,6 @@
 <div class="block_children_circles">
 	<div class="wrap">
-		<p class="title_block">ДЕТСКИЕ КРУЖКИ В МОСКВЕ</p>
+		<p class="title_block">ОБРАЗОВАНИЕ, КРУЖКИ И СЕКЦИИ В МОСКВЕ</p>
 		<div class="bcc_container">
 			<?php
 
@@ -25,7 +25,7 @@
 						<img src="<?php echo get_template_directory_uri(); ?>/assets/img/children_circles.png" alt="">
 					</div>
 					<div class="bcc_item_info">
-						<p class="bcc_item_title">ИЗО студия <?php echo $i; ?></p>
+						<a href="#" class="bcc_item_title">ИЗО студия <?php echo $i; ?></a>
 						<p class="bcc_item_text">Метро: Площадь Ильича<br>Срок обучения: от 2 недель</p>
 					</div>
 					<div class="bcc_item_read_more">

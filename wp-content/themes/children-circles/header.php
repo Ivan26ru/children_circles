@@ -33,16 +33,18 @@
 <a href="#" class="btn_orange btn_open_popup popmake-114">Записаться</a>
 <header>
 	<div class="wrap">
-		<a href="<?php echo get_site_url(); ?>" class="block_logo">
-			<div class="wrap_logo">
-				<img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png" alt="">
-			</div>
-			<div class="block_logo_text">
-				<p class="blt_title">Детские кружки</p>
-				<div class="blt_line"></div>
-				<p class="blt_description">Детские кружки в Москве</p>
-			</div>
-		</a>
+		<div class="header_logo">
+			<a href="<?php echo get_site_url(); ?>" class="block_logo">
+				<div class="wrap_logo">
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png" alt="">
+				</div>
+				<div class="block_logo_text">
+					<p class="blt_title">Детские кружки</p>
+					<div class="blt_line"></div>
+					<p class="blt_description">Детские кружки в Москве</p>
+				</div>
+			</a>
+		</div>
 		<div class="header_center">
 			<div class="hc_line1">
 				<a href="#">
