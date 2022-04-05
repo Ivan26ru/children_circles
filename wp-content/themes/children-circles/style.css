@@ -1524,6 +1524,26 @@ footer a {
     font-size: 24px;
 }
 
+.tablepress tfoot th,
+.tablepress thead th {
+    background-color: var(--my-purple); /* 	font-weight: 700; */
+    vertical-align: middle;
+    color: #ffffff;
+}
+
+.tablepress .row-hover tr:hover td{
+    background-color: var(--my-orange);
+}
+
+.tablepress {
+    font-size: 18px;
+}
+
+.tablepress td,
+.tablepress th {
+    padding-left: 10px;
+}
+
 .table_description {
     text-align: right;
 }
