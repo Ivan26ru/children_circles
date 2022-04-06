@@ -10,7 +10,7 @@ Author URI: https://vk.com/ivan26ru
 :root {
     --my-orange: rgba(245, 234, 201, 1);
     --my-purple: #00B2BE;
-    --my-red: #ECF4FD;
+    --my-red: rgba(218, 91, 60, 1);
     --my-white-opacity: rgba(255, 255, 255, 0.5);
     --my-boxshadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.5);
 }
@@ -206,7 +206,7 @@ blockquote,
 }
 
 hr {
-    border: none;
+    /* margin-top: 15px; */border: none;
     border-top: 1px solid #0000003b;
 }
 
@@ -1070,6 +1070,11 @@ header .wrap {
 .bt_item_name {
     font-size: 16px;
     margin-top: 7px;
+    color:#000000
+}
+
+.bt_item_name:hover{
+    color: var(--my-red);
 }
 
 .bt_item_experience {
@@ -1257,7 +1262,7 @@ footer a {
     flex-grow: 0;
     flex-shrink: 0;
     box-sizing: border-box;
-    width: 200px;
+    width: 190px;
     padding-right: 30px;
     padding-bottom: 20px;
 }
@@ -1270,6 +1275,10 @@ footer a {
     padding-left: 25px;
 }
 
+.sidebar_left hr{
+    margin-top:15px;
+}
+
 .bc_wrap {
     flex-grow: 1;
 }
@@ -1280,12 +1289,12 @@ footer a {
 }
 
 .sl_menu_title {
-    font-size: 20px;
+    font-size: 24px;
     text-transform: uppercase;
 }
 
 .sl_item_menu {
-    margin-top: 20px;
+    margin-top: 11px;
 }
 
 .sl_menu_ul {
@@ -1368,12 +1377,13 @@ footer a {
 }
 
 .sr_title {
-    font-size: 25px;
+    font-size: 21px;
+    text-transform: uppercase;
 }
 
 .sr_info {
-    font-size: 18px;
-    margin-top: 20px;
+    font-size: 19px;
+    margin-top: 12px;
 }
 
 .sr_discount {
@@ -1715,7 +1725,6 @@ footer a {
 .tablepress .sorting:hover, .tablepress .sorting_asc, .tablepress .sorting_desc {
     background-color: #DA5B3C;
 }
-
 
 .sticky {
     position: fixed;

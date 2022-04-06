@@ -4,7 +4,7 @@
 			<div class="sidebar_left">
 				<div class="sidebar_left_container" id="sidebar_left_container">
 					<div class="sl_item_menu sl_item_menu_1">
-						<p class="sl_menu_title">Инфо</p>
+						<p class="sl_menu_title">Обучение</p>
 						<hr>
 						<?php
 						// Вставка меню в тему
@@ -55,7 +55,8 @@
 				</div>
 			</div>
 			<div class="bc_wrap">
-				<div class="bc_item_breadcrumbs">                    <?php
+				<div class="bc_item_breadcrumbs">
+					<?php
 					if (function_exists('yoast_breadcrumb')) {
 						yoast_breadcrumb('<p id="breadcrumbs" class="breadcrumbs">', '</p>');
 					}
@@ -80,14 +81,14 @@
 			</div>
 			<div class="sidebar_right">
 				<div class="sidebar_right_container" id="sidebar_right_container">
-					<p class="sr_title">Детские кружки</p>
+					<p class="sr_title">Дополнительное обучение</p>
 					<div class="sr_info">
-						<p class="text_orange">опыт более 10 лет</p>
-						<p>ИНН 9715006367</p>
-						<p>КПП 771501001</p>
+						<p class="text_orange">Детские кружки</p>
+						<p>Мастер классы</p>
+						<p>Образование</p>
 					</div>
-					<br>
 					<hr>
+					<br>
 					<p>Пробное занятие бесплатно</p>
 					<p class="sr_discount"><span>1000</span> = 0</p>
 					<a href="#" class="btn_find_out_more btn_orange">Узнать больше</a>

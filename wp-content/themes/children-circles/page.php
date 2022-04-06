@@ -13,6 +13,6 @@ get_header(); // подключаем header.php ?>
 <?php include "include/block_gratitude.php"; ?>
 <?php include "include/ratings_and_reviews.php"; ?>
 <?php include "include/block_special_offers.php"; ?>
-<?php include "include/block_teachers.php"; ?>
+<?php include "include/block_other_single.php"; ?>
 <?php include "include/block_map.php"; ?>
 <?php get_footer(); // подключаем footer.php ?>

@@ -1,6 +1,6 @@
 <div class="block_our_mugs">
 	<div class="wrap">
-		<p class="title_block">Наши кружки</p>
+		<p class="title_block">НАШИ КРУЖКИ</p>
 		<div class="bom_container">
 				<div class="bom_item">
 					<div class="bom_item_wrap_img">
