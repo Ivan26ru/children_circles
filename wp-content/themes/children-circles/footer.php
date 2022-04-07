@@ -63,7 +63,7 @@
 					</p>
 				</div>
 				<p class="header_contact">с 8:00 до 22:00</p>
-				<a href="#" class="f_sitemap">Карта сайта</a>
+				<a href="/sitemap.xml" class="f_sitemap">Карта сайта</a>
 			</div>
 		</div>
 	</div>
