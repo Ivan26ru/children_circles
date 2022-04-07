@@ -109,22 +109,23 @@ jQuery(document).ready(function ($) { //ожидание полной загру
         }, false);
     })
 
-    $('.block_map input[type="submit"], .bso_item_card, .bpsd_ic_block, .btn_find_out_more').bind('click', function(event) {
+    $('.block_map input[type="submit"], .bso_item_card, .bpsd_ic_block, .btn_find_out_more').bind('click', function (event) {
         event.preventDefault();//убираем стандартное поведение
         PUM.open('114');
     });
 
 
-    Array.prototype.slice.call(document.querySelectorAll('#sidebar_left_container,#sidebar_right_container')).forEach(function(a) {  // селекторы блоков, которые будут фиксироваться. Может быть как один блок, так два и более
+    Array.prototype.slice.call(document.querySelectorAll('#sidebar_left_container,#sidebar_right_container')).forEach(function (a) {  // селекторы блоков, которые будут фиксироваться. Может быть как один блок, так два и более
         var b = null, P = 80;
         window.addEventListener('scroll', Ascroll, false);
         document.body.addEventListener('scroll', Ascroll, false);
+
         function Ascroll() {
             if (b == null) {
                 var Sa = getComputedStyle(a, ''), s = '';
                 for (var i = 0; i < Sa.length; i++) {
                     if (Sa[i].indexOf('overflow') == 0 || Sa[i].indexOf('padding') == 0 || Sa[i].indexOf('border') == 0 || Sa[i].indexOf('outline') == 0 || Sa[i].indexOf('box-shadow') == 0 || Sa[i].indexOf('background') == 0) {
-                        s += Sa[i] + ': ' +Sa.getPropertyValue(Sa[i]) + '; '
+                        s += Sa[i] + ': ' + Sa.getPropertyValue(Sa[i]) + '; '
                     }
                 }
                 b = document.createElement('div');
@@ -143,7 +144,7 @@ jQuery(document).ready(function ($) { //ожидание полной загру
             if ((Ra.top - P) <= 0) {
                 if ((Ra.top - P) <= R) {
                     b.className = 'stop';
-                    b.style.top = - R +'px';
+                    b.style.top = -R + 'px';
                     b.style.left = 0;
                 } else {
                     b.className = 'sticky';
@@ -155,11 +156,18 @@ jQuery(document).ready(function ($) { //ожидание полной загру
                 b.style.top = '';
                 b.style.left = '';
             }
-            window.addEventListener('resize', function() {
+            window.addEventListener('resize', function () {
                 a.children[0].style.width = getComputedStyle(a, '').width;
                 b.style.left = (b.className == 'sticky' ? (a.getBoundingClientRect().left + 'px') : '0');
             }, false);
         }
     })
+
+    var burgerMenu = document.getElementById('burger-menu');
+    var overlay = document.getElementById('my_mobile_menu');
+    burgerMenu.addEventListener('click', function () {
+        this.classList.toggle("close");
+        overlay.classList.toggle("overlay");
+    });
 
 }); //конец ready

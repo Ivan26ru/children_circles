@@ -32,15 +32,18 @@ register_sidebar(array( // регистрируем левую колонку, �
 if (!class_exists('clean_comments_constructor')) { // если класс уже есть в дочерней теме - нам не надо его определять
 	class clean_comments_constructor extends Walker_Comment
 	{ // класс, который собирает всю структуру комментов
-		public function start_lvl(&$output, $depth = 0, $args = array()) { // что выводим перед дочерними комментариями
+		public function start_lvl(&$output, $depth = 0, $args = array())
+		{ // что выводим перед дочерними комментариями
 			$output .= '<ul class="children">' . "\n";
 		}
 
-		public function end_lvl(&$output, $depth = 0, $args = array()) { // что выводим после дочерних комментариев
+		public function end_lvl(&$output, $depth = 0, $args = array())
+		{ // что выводим после дочерних комментариев
 			$output .= "</ul><!-- .children -->\n";
 		}
 
-		protected function comment($comment, $depth, $args) { // разметка каждого комментария, без закрывающего </li>!
+		protected function comment($comment, $depth, $args)
+		{ // разметка каждого комментария, без закрывающего </li>!
 			$classes = implode(' ', get_comment_class()) . ($comment->comment_author_email == get_the_author_meta('email') ? ' author-comment' : ''); // берем стандартные классы комментария и если коммент пренадлежит автору поста добавляем класс author-comment
 			echo '<li id="comment-' . get_comment_ID() . '" class="' . $classes . ' media">' . "\n"; // родительский тэг комментария с классами выше и уникальным якорным id
 			echo '<div class="media-left">' . get_avatar($comment, 64, '', get_comment_author(), array('class' => 'media-object')) . "</div>\n"; // покажем аватар с размером 64х64
@@ -61,14 +64,16 @@ if (!class_exists('clean_comments_constructor')) { // если класс уже
 			echo '</div>' . "\n"; // закрываем див
 		}
 
-		public function end_el(&$output, $comment, $depth = 0, $args = array()) { // конец каждого коммента
+		public function end_el(&$output, $comment, $depth = 0, $args = array())
+		{ // конец каждого коммента
 			$output .= "</li><!-- #comment-## -->\n";
 		}
 	}
 }
 
 if (!function_exists('pagination')) { // если ф-я уже есть в дочерней теме - нам не надо её определять
-	function pagination() { // функция вывода пагинации
+	function pagination()
+	{ // функция вывода пагинации
 		global $wp_query; // текущая выборка должна быть глобальной
 		$big = 999999999; // число для замены
 		$links = paginate_links(array( // вывод пагинации с опциями ниже
@@ -103,7 +108,8 @@ add_action('wp_footer', 'add_scripts'); // приклеем ф-ю на доба�
 if (!function_exists('add_scripts')) { // если ф-я уже есть в дочерней теме - нам не надо её определять
 	wp_deregister_script('jquery'); // выключаем стандартный jquery
 	wp_enqueue_script('jquery', 'https://code.jquery.com/jquery-2.2.0.min.js', '', '', true); // добавляем свой jq
-	function add_scripts() { // добавление скриптов
+	function add_scripts()
+	{ // добавление скриптов
 		wp_enqueue_script('animate-css.js', get_template_directory_uri() . '/assets/libs/animate/animate-css.js', '', '', true); // и скрипты шаблона
 		wp_enqueue_script('slick.js', get_template_directory_uri() . '/assets/libs/slick/slick.js', '', '', true); // и скрипты шаблона
 		wp_enqueue_script('main', get_template_directory_uri() . '/assets/js/main.js', '', '', true); // и скрипты шаблона
@@ -112,7 +118,8 @@ if (!function_exists('add_scripts')) { // если ф-я уже есть в до
 
 add_action('wp_print_styles', 'add_styles'); // приклеем ф-ю на добавление стилей в хедер
 if (!function_exists('add_styles')) { // если ф-я уже есть в дочерней теме - нам не надо её определять
-	function add_styles() { // добавление стилей
+	function add_styles()
+	{ // добавление стилей
 		wp_enqueue_style('main_reset', get_template_directory_uri() . '/assets/css/reset.css');
 		wp_enqueue_style('style_wp', get_template_directory_uri() . '/assets/css/style_wp.css');
 		wp_enqueue_style('font-awesome.min', get_template_directory_uri() . '/assets/css/font-awesome.min.css');
@@ -136,17 +143,17 @@ if (function_exists('acf_add_options_page')) {
 		'redirect'   => false
 	));
 
-	//	acf_add_options_sub_page(array(
-	//		'page_title'  => 'Настройки шапки',
-	//		'menu_title'  => 'Шапка',
-	//		'parent_slug' => 'theme-general-settings',
-	//	));
+//	acf_add_options_sub_page(array(
+//		'page_title'  => 'Настройки шапки',
+//		'menu_title'  => 'Шапка',
+//		'parent_slug' => 'theme-general-settings',
+//	));
 
-	//	acf_add_options_sub_page(array(
-	//		'page_title'  => 'Настройки подвала',
-	//		'menu_title'  => 'Подвал',
-	//		'parent_slug' => 'theme-general-settings',
-	//	));
+//	acf_add_options_sub_page(array(
+//		'page_title'  => 'Настройки подвала',
+//		'menu_title'  => 'Подвал',
+//		'parent_slug' => 'theme-general-settings',
+//	));
 
 }
 
@@ -154,7 +161,6 @@ if (function_exists('acf_add_options_page')) {
 function my_acf_init() {
 	acf_update_setting('google_api_key', 'AIzaSyC4vEAW-s167o-qcgYjo_mpm-Zd50vjCww');
 }
-
 add_action('acf/init', 'my_acf_init');
 
 function get_url_img_is_sub_field($name_field_image_id, $img_size = 'full', $img_default = '') {
