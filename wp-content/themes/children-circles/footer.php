@@ -49,9 +49,9 @@
 						<img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png" alt="">
 					</div>
 					<div class="block_logo_text">
-						<p class="blt_title">Детские кружки</p>
+						<p class="blt_title">ДОПОЛНИТЕЛЬНОЕ ОБУЧЕНИЕ</p>
 						<div class="blt_line"></div>
-						<p class="blt_description">Детские кружки в Москве</p>
+						<p class="blt_description">Подготовительные курсы, занятия, кружки</p>
 					</div>
 				</a>
 				<p class="f_adress">г.Москва, ул.Степана Супруна, д.4</p>

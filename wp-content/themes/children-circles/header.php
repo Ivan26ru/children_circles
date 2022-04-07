@@ -30,7 +30,7 @@
 	<?php wp_head(); // необходимо для работы плагинов и функционала ?>
 </head>
 <body <?php body_class(); // все классы для body ?>>
-<a href="#" class="btn_orange btn_open_popup popmake-114">Записаться</a>
+<!--<a href="#" class="btn_orange btn_open_popup popmake-114">Записаться</a>-->
 <header>
 	<div class="wrap">
 		<div class="header_logo">
@@ -39,25 +39,21 @@
 					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png" alt="">
 				</div>
 				<div class="block_logo_text">
-					<p class="blt_title">Детские кружки</p>
+					<p class="blt_title">ДОПОЛНИТЕЛЬНОЕ ОБУЧЕНИЕ</p>
 					<div class="blt_line"></div>
-					<p class="blt_description">Детские кружки в Москве</p>
+					<p class="blt_description">Подготовительные курсы, занятия, кружки</p>
 				</div>
 			</a>
 		</div>
 		<div class="header_center">
-			<div class="hc_line1">
-				<a href="#">
-					<div class="hc_line1_wrap_img"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/lic.png" alt=""></div>
-					Лицензия 77Л01 №0010539</a>
-			</div>
 			<div class="hc_line2">
 				<?php
 				// Вставка меню в тему
 				$args = array(
 						'theme_location' => 'top', // область темы
 						'container' => 'div', // блок, в который нужно поместить меню, укажите false, чтобы не помещать в блок
-						'container_class' => 'menu_header', // css-класс блока div
+						'container_id'         => 'my_mobile_menu',
+						'container_class' => 'my_mobile_menu', // css-класс блока div
 						'menu_class' => 'menu_header_ul', // css-класс ul
 						'echo' => true, // вывести или записать в переменную
 						'depth' => 0 // количество уровней вложенности
@@ -75,6 +71,14 @@
 			</p>
 			<p class="header_contact">с 8:00 до 22:00</p>
 			<a href="#" class="header_contact">info@dadastiopa.ru</a>
+		</div>
+
+		<button class="btn_orange btn_orange_header popmake-114">Записаться</button>
+
+		<div class="menu__burger" id="burger-menu">
+			<div class="menu__burger_wrap_img">
+				<img alt="меню" title="меню" data-src="<?php echo get_template_directory_uri(); ?>/assets/img/burger.png" class="lazy-loaded ls-is-cached lazyloaded" src="https://tz-sound-origin.loc/wp-content/themes/wp_theme_tzsound/img/burger.png"><noscript><img src="https://tz-sound-origin.loc/wp-content/themes/wp_theme_tzsound/img/burger.png" alt="меню" title="меню"/></noscript>
+			</div>
 		</div>
 	</div>
 </header>
