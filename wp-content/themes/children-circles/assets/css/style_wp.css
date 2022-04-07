@@ -64,3 +64,11 @@ a img.aligncenter {
     margin:0;
     padding:0 4px 5px;
 }
+
+strong{
+    font-weight: bold;
+}
+
+em{
+    font-style: italic;
+}
