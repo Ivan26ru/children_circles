@@ -162,3 +162,14 @@ function my_acf_init() {
 	acf_update_setting('google_api_key', 'AIzaSyC4vEAW-s167o-qcgYjo_mpm-Zd50vjCww');
 }
 add_action('acf/init', 'my_acf_init');
+
+function  ($name_field_image_id, $img_size = 'full', $img_default = '') {
+
+	if (get_sub_field($name_field_image_id)) {
+		$resoult = wp_get_attachment_image_url(get_sub_field($name_field_image_id), $img_size);
+	} else {
+		$resoult = $img_default;
+	}
+
+	return $resoult;
+} ?>
