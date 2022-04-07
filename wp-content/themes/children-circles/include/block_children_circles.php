@@ -8,8 +8,7 @@
 			$col_item = 3;//количество элементов в блоке
 			$col_start = '<div class="bcc_col">'; //Начало блока
 			$col_end = '</div>'; //Конец блока
-
-			for ($i = 0; $i < 10; $i++) {
+			if (have_rows('block_children_circles', 'option')): ?><?php while (have_rows('block_children_circles', 'option')): the_row();
 
 				if ($count_item === 0) {
 					echo $col_start;
@@ -19,24 +18,35 @@
 					echo $col_end . $col_start;
 				} else {
 					$count_item++;
-				} ?>
+				}
+
+				$img_src = get_url_img_is_sub_field('img', 'full', get_template_directory_uri() . '/assets/img/children_circles.png');
+				$title = get_sub_field('title');
+				$img = '<img src="' . $img_src . '" alt="' . $title . '" title="' . $title . '">';
+				$metro = get_sub_field('metro');
+				$time_learning = get_sub_field('time_learning');
+				$bonus = (get_sub_field('bonus')) ? '<span class="bcc_item_discount">-10%</span>' : '';
+				?>
+
+
 				<div class="bcc_item">
 					<div class="bcc_item_wrap_img">
-						<img src="<?php echo get_template_directory_uri(); ?>/assets/img/children_circles.png" alt="">
+						<?php echo $img; ?>
 					</div>
 					<div class="bcc_item_info">
-						<a href="#" class="bcc_item_title">ИЗО студия <?php echo $i; ?></a>
-						<p class="bcc_item_text">Метро: Площадь Ильича<br>Срок обучения: от 2 недель</p>
+						<a href="#" class="bcc_item_title"><?php echo $title; ?></a>
+						<p class="bcc_item_text">Метро: <?php echo $metro; ?>
+							<br>Срок обучения: <?php echo $time_learning; ?></p>
 					</div>
 					<div class="bcc_item_read_more">
 						<a href="#" class="bcc_item_read_more_a">Подробнее</a>
 					</div>
-					<span class="bcc_item_discount">-10%</span>
+					<?php echo $bonus; ?>
 				</div>
-				<?php
-
-			}
-			echo $col_end; ?>
+			<?php
+			endwhile; endif;
+			echo $col_end;
+			?>
 
 		</div>
 	</div>
