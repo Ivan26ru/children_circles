@@ -63,7 +63,7 @@
 					?>
 				</div>
 				<div class="bc_content">
-					<div class="bcc_content">
+					<div class="bcc_content block_content_seo">
 						<?php if (is_category()) {
 							$catID = get_query_var('cat');
 							if ($cat_desc = category_description($catID)) echo $cat_desc;

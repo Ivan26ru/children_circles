@@ -1435,10 +1435,18 @@ footer a {
     margin-top: 20px;
 }
 
-.bc_title {
+.bc_title,
+.block_content_seo h1,
+.block_content_seo h2,
+.block_content_seo h3,
+.block_content_seo h4,
+.block_content_seo h5,
+.block_content_seo h6
+{
     font-size: 31px;
     padding-left: 40px;
     background: url("assets/img/icon_info.png") no-repeat left 0px center/ 30px;
+    margin-top: 10px;
 }
 
 .bc_content {
