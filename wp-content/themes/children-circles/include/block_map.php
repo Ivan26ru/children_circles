@@ -14,12 +14,12 @@
 		?>
 
 
-		<div id="<?php echo $yandexMapAttrId; ?>" style="width: 100%; height: 100%"></div>
+		<div id="<?php echo $yandexMapAttrId; ?>" style="width: 100%; height: 100%" class="pe-n"></div>
 		<script>
 			function <?php echo $yandexMapInit ?>() {
 				var myMap = new ymaps.Map(<?php echo $yandexMapAttrId ?>, {
-					center: [55.76, 37.64],
-					zoom: 11
+					center: [55.76, 37.40],
+					zoom: 10
 				}, {
 					searchControlProvider: 'yandex#search'
 				});
