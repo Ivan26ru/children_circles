@@ -9,7 +9,7 @@
 	<div class="wrap">
 		<div class="footer_container">
 			<div class="f_col f_col1">
-				<p class="footer_title">СТУДИЯ ДОШКОЛЬНОГО ОБРАЗОВАНИЯ</p>
+				<p class="footer_title">Образование</p>
 				<?php
 				// Вставка меню в тему
 				$args = array(
