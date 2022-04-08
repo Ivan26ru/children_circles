@@ -77,7 +77,7 @@
 
 		<div class="menu__burger" id="burger-menu">
 			<div class="menu__burger_wrap_img">
-				<img alt="меню" title="меню" data-src="<?php echo get_template_directory_uri(); ?>/assets/img/burger.png" class="lazy-loaded ls-is-cached lazyloaded" src="https://tz-sound-origin.loc/wp-content/themes/wp_theme_tzsound/img/burger.png"><noscript><img src="https://tz-sound-origin.loc/wp-content/themes/wp_theme_tzsound/img/burger.png" alt="меню" title="меню"/></noscript>
+				<img alt="меню" title="меню" src="<?php echo get_template_directory_uri(); ?>/assets/img/burger.png">
 			</div>
 		</div>
 	</div>
