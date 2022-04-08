@@ -63,12 +63,6 @@
 					?>
 				</div>
 				<div class="bc_content">
-					<p class="bc_title">
-						<?php if (is_category()) {
-							single_cat_title(); // название категории
-						} else {
-							the_title();
-						} ?>
 					<div class="bcc_content">
 						<?php if (is_category()) {
 							$catID = get_query_var('cat');
