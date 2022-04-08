@@ -7,6 +7,7 @@
 get_header(); // подключаем header.php ?>
 
 <?php include "include/block_map.php"; ?>
+<?php include "include/block_h1.php"; ?>
 <?php include "include/block_trial_lesson.php"; ?>
 <?php include "include/block_content.php"; ?>
 <?php include "include/block_our_mugs.php"; ?>

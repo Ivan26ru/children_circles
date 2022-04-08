@@ -42,6 +42,13 @@ select, input {
     margin: 0 auto;
 }
 
+h1,
+.h1 {
+    font-size: 27px;
+    text-align: center;
+    margin:12px 0;
+}
+
 .pe-n {
     pointer-events: none;
 }
@@ -1007,11 +1014,11 @@ header .wrap {
     background: rgba(255, 255, 255, 0.4);
 }
 
-.bso_item_card .icon_fire{
+.bso_item_card .icon_fire {
     display: none;
 }
 
-.bso_item_card:hover .icon_fire{
+.bso_item_card:hover .icon_fire {
     display: block;
 }
 
@@ -1768,6 +1775,6 @@ footer a {
 }
 
 .sidebar_left_container .sticky .sl_item_menu_2,
-.sidebar_left_container .stop .sl_item_menu_2{
+.sidebar_left_container .stop .sl_item_menu_2 {
     display: none;
 }
