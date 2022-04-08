@@ -45,8 +45,8 @@ select, input {
 h1,
 .h1 {
     font-size: 27px;
+    margin: 12px 0;
     text-align: center;
-    margin:12px 0;
 }
 
 .pe-n {
@@ -1280,8 +1280,8 @@ footer a {
 
 .bc_container {
     display: flex;
-    max-width: 100%;
     justify-content: space-between;
+    max-width: 100%;
 }
 
 .bc_container > div {
@@ -1440,12 +1440,11 @@ footer a {
 .block_content_seo h3,
 .block_content_seo h4,
 .block_content_seo h5,
-.block_content_seo h6
-{
+.block_content_seo h6 {
     font-size: 31px;
+    margin-top: 10px;
     padding-left: 40px;
     background: url("assets/img/icon_info.png") no-repeat left 0px center/ 30px;
-    margin-top: 10px;
 }
 
 .bc_content {
@@ -1784,4 +1783,12 @@ footer a {
 .sidebar_left_container .sticky .sl_item_menu_2,
 .sidebar_left_container .stop .sl_item_menu_2 {
     display: none;
+}
+
+#Ax5YFnzhZL0 {
+    background-image: url("assets/img/video1.jpg")!important;
+}
+
+#rl2iKJUX8t0 {
+    background-image: url("assets/img/video2.jpg")!important;
 }
