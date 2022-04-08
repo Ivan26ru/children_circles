@@ -1281,6 +1281,7 @@ footer a {
 .bc_container {
     display: flex;
     max-width: 100%;
+    justify-content: space-between;
 }
 
 .bc_container > div {
@@ -1296,8 +1297,7 @@ footer a {
     flex-grow: 0;
     flex-shrink: 0;
     box-sizing: border-box;
-    width: 190px;
-    padding-right: 30px;
+    width: 175px;
     padding-bottom: 20px;
 }
 
@@ -1305,8 +1305,7 @@ footer a {
     flex-grow: 0;
     flex-shrink: 0;
     box-sizing: border-box;
-    width: 200px;
-    padding-left: 25px;
+    width: 175px;
 }
 
 .sidebar_left hr {
@@ -1314,7 +1313,7 @@ footer a {
 }
 
 .bc_wrap {
-    flex-grow: 1;
+    width: 755px;
 }
 
 .block_content {
