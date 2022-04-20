@@ -48,12 +48,11 @@
 
 				<?php }
 				} else {
-					// Постов не найдено
-				}
+				// Постов не найдено
+			}
 				// Возвращаем оригинальные данные поста. Сбрасываем $post.
 				wp_reset_postdata();
 				?>
-				;
 			}
 
 			ymaps.ready(<?php echo $yandexMapInit ?>);
@@ -62,8 +61,7 @@
 	</div>
 	<div class="wrap pe-n">
 		<div class="form_map">
-			<div class="my_cf7_form my_cf7_magenta">
-				<?php echo do_shortcode(get_field('cf7_map', 'option')); ?></div>
+			<div class="my_cf7_form my_cf7_magenta"><?php echo do_shortcode(get_field('cf7_map', 'option')); ?></div>
 		</div>
 	</div>
 </div>
