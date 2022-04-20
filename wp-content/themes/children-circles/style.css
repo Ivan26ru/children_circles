@@ -13,6 +13,7 @@ Author URI: https://vk.com/ivan26ru
     --my-red: rgba(218, 91, 60, 1);
     --my-white-opacity: rgba(255, 255, 255, 0.5);
     --my-boxshadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.5);
+    --my-darksilver: #5c5c5c;
 }
 
 * {
@@ -240,7 +241,7 @@ header {
     height: 62px;
     padding-top: 12px;
     padding-bottom: 10px;
-    background: rgb(0, 0, 0);
+    background: var(--my-darksilver);
 }
 
 header a,
@@ -1172,7 +1173,7 @@ footer {
     padding-top: 40px;
     padding-bottom: 20px;
     color: #ffffff;
-    background: #000000;
+    background: var(--my-darksilver);
 }
 
 footer a {
@@ -1738,7 +1739,7 @@ footer a {
 .bbm_btn {
     font-size: 18px;
     margin: 0 10px;
-    padding: 10px;
+    padding: 8px;
     text-transform: uppercase;
     color: #ffffff;
     border-radius: 30px;
