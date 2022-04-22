@@ -19,7 +19,7 @@
 			function <?php echo $yandexMapInit ?>() {
 				var myMap = new ymaps.Map(<?php echo $yandexMapAttrId ?>, {
 					center: [55.60, 37.40],
-					zoom: 11
+					zoom: 10
 				}, {
 					searchControlProvider: 'yandex#search'
 				});
