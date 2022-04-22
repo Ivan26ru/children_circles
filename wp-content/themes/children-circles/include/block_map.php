@@ -14,7 +14,7 @@
 		?>
 
 
-		<div id="<?php echo $yandexMapAttrId; ?>" style="width: 100%; height: 100%" class="pe-n"></div>
+		<div id="<?php echo $yandexMapAttrId; ?>" style="width: 100%; height: 100%" class="pe-n!"></div>
 		<script>
 			function <?php echo $yandexMapInit ?>() {
 				var myMap = new ymaps.Map(<?php echo $yandexMapAttrId ?>, {
@@ -48,11 +48,7 @@
 						}))
 
 				<?php }
-				} else {
-				// Постов не найдено
-			}
-				// Возвращаем оригинальные данные поста. Сбрасываем $post.
-				wp_reset_postdata();
+				} wp_reset_postdata();
 				?>
 			}
 
