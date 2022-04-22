@@ -30,9 +30,10 @@
 
 				<?php $args = array(
 						'post_type' => 'section',
+						'nopaging'  => true,
+
 				);
 				$query = new WP_Query($args);
-
 
 				// Цикл
 				if ($query->have_posts()) {
