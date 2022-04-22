@@ -35,8 +35,8 @@
 					</div>
 					<div class="bcc_item_info">
 						<a href="<?php echo $link; ?>" class="bcc_item_title"><?php echo $title; ?></a>
-						<p class="bcc_item_text">Метро: <?php echo $metro; ?>
-							<br>Срок обучения: <?php echo $time_learning; ?></p>
+						<p class="bcc_item_text">Длительность: <?php echo $metro; ?>
+							<br>Возраст: <?php echo $time_learning; ?></p>
 					</div>
 					<div class="bcc_item_read_more">
 						<a href="#" class="bcc_item_read_more_a">Подробнее</a>
