@@ -59,7 +59,7 @@
 					<p class="header_soc">
 						<a href="#" class="header_logo_soc"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/tg.png" alt=""></a>
 						<a href="#" class="header_logo_soc"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/ws.png" alt=""></a>
-						<a href="#" class="header_tell">8 (800) 758-770-02</a>
+						<a href="tel:84952200396" class="header_tell">8 495 220 03 96</a>
 					</p>
 				</div>
 				<p class="header_contact">с 8:00 до 22:00</p>
