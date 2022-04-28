@@ -18,7 +18,7 @@
 						'container_class' => 'footer_wrap_menu_1', // css-класс блока div
 						'menu_class'      => 'fwm1_ul', // css-класс ul
 						'echo'            => true, // вывести или записать в переменную
-						'depth'           => 0 // количество уровней вложенности
+						'depth'           => 1 // количество уровней вложенности
 				);
 
 				wp_nav_menu($args);
@@ -36,7 +36,7 @@
 						'container_class' => 'footer_wrap_menu_2', // css-класс блока div
 						'menu_class'      => 'fwm2_ul', // css-класс ul
 						'echo'            => true, // вывести или записать в переменную
-						'depth'           => 0 // количество уровней вложенности
+						'depth'           => 1 // количество уровней вложенности
 				);
 
 				wp_nav_menu($args);

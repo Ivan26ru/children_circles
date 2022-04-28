@@ -56,7 +56,7 @@
 						'container_class' => 'my_mobile_menu', // css-класс блока div
 						'menu_class' => 'menu_header_ul', // css-класс ul
 						'echo' => true, // вывести или записать в переменную
-						'depth' => 0 // количество уровней вложенности
+						'depth' => 2	 // количество уровней вложенности
 				);
 
 				wp_nav_menu($args);
