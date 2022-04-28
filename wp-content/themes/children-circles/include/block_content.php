@@ -14,7 +14,7 @@
 								'container_class' => 'sl_menu', // css-класс блока div
 								'menu_class'      => 'sl_menu_ul', // css-класс ul
 								'echo'            => true, // вывести или записать в переменную
-								'depth'           => 0 // количество уровней вложенности
+								'depth'           => 1 // количество уровней вложенности
 						);
 
 						wp_nav_menu($args);
@@ -31,7 +31,7 @@
 								'container_class' => 'sl_menu', // css-класс блока div
 								'menu_class'      => 'sl_menu_ul', // css-класс ul
 								'echo'            => true, // вывести или записать в переменную
-								'depth'           => 0 // количество уровней вложенности
+								'depth'           => 1 // количество уровней вложенности
 						);
 
 						wp_nav_menu($args);
