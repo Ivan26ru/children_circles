@@ -8,8 +8,10 @@
 				while (have_rows('block_we_teach_item', 'option')) :
 					the_row();
 					$title = get_sub_field('title');
+					$link = get_sub_field('link');
+					$img = get_url_img_is_sub_field('img', 'icon', '/wp-content/themes/children-circles/assets/img/logo.png')
 					?>
-					<li class="cwt_item"><a href="#"><?php echo $title; ?></a></li>
+					<li class="cwt_item"><a href="<?php echo $link; ?>"><span class="cwt_item_img"><img src="<?php echo $img; ?>" alt="<?php echo $title; ?>"></span><span><?php echo $title; ?></span></a></li>
 				<?php
 					// End loop.
 				endwhile;
