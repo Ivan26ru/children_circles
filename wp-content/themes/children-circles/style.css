@@ -1633,6 +1633,11 @@ footer a {
     font-size: 24px;
 }
 
+.dataTables_wrapper{
+    max-height: 500px;
+    overflow-y: auto;
+}
+
 .tablepress tfoot th,
 .tablepress thead th {
     vertical-align: middle;
