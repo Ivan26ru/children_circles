@@ -387,28 +387,22 @@ header .wrap {
     left: 0;
     display: none;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: flex-start;
     box-sizing: border-box;
-    width: 600px;
+    width: 500px;
     padding: 10px;
-    padding-top: 0;
-    border: 1px solid var(--my-white-opacity);
-    background: var(--my-purple);
-    border-radius: 10px;
+    background: var(--my-darksilver);
 }
 
 .menu_header_ul .sub-menu li {
-    width: calc(33.3% - 10px);
+    width: calc(50% - 10px);
     margin-top: 10px;
 }
 
 .menu_header_ul .sub-menu li a {
     display: block;
     box-sizing: border-box;
-    padding: 5px;
-    border: 1px solid var(--my-white-opacity);
-    border-radius: 10px;
-    background: var(--my-white-opacity)
+    font-size: 14px;
 }
 
 
