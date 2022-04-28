@@ -387,13 +387,14 @@ header .wrap {
     left: 0;
     display: none;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: space-around;
     box-sizing: border-box;
-    width: 500px;
+    width: 600px;
     padding: 10px;
     padding-top: 0;
-    background: var(--my-darksilver);
-    border:1px solid #ffffff;
+    border: 1px solid var(--my-white-opacity);
+    background: var(--my-purple);
+    border-radius: 10px;
 }
 
 .menu_header_ul .sub-menu li {
@@ -403,7 +404,13 @@ header .wrap {
 
 .menu_header_ul .sub-menu li a {
     display: block;
+    box-sizing: border-box;
+    padding: 5px;
+    border: 1px solid var(--my-white-opacity);
+    border-radius: 10px;
+    background: var(--my-white-opacity)
 }
+
 
 .menu__burger {
     display: none;
