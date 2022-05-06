@@ -1345,6 +1345,7 @@ footer a {
     max-width: 100%;
     height: auto;
     border-radius: 30px;
+    display: block;
 }
 
 .sidebar_left {
@@ -1630,6 +1631,9 @@ footer a {
 
 .dataTables_wrapper{
     margin-top: 20px;
+    border-radius: 20px;
+    border:1px solid var(--my-purple);
+    overflow: hidden;
 }
 
 /*.dataTables_wrapper tbody{*/
@@ -1650,7 +1654,7 @@ footer a {
 
 .tablepress {
     font-size: 18px;
-    border:1px solid var(--my-purple);
+    /*border:1px solid var(--my-purple);*/
 }
 
 .tablepress td,
@@ -1674,8 +1678,9 @@ footer a {
     overflow: hidden;
 }
 
-.bltwu_block_2_table_wrap .tablepress{
+.bltwu_block_2_table_wrap .dataTables_wrapper {
     border: none;
+    border-radius: 0;
 }
 
 .bltwu_block_2_table_wrap .dataTables_wrapper{
