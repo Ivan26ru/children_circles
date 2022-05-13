@@ -46,7 +46,7 @@
 			<div class="f_col f_col3">
 				<a href="#" class="block_logo">
 					<div class="wrap_logo">
-						<img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png" alt="">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png" alt="Логотип" title="Логотип">
 					</div>
 					<div class="block_logo_text">
 						<p class="blt_title">ДОПОЛНИТЕЛЬНОЕ ОБУЧЕНИЕ</p>
@@ -57,8 +57,8 @@
 				<p class="f_adress">г.Москва, ул.Степана Супруна, д.4</p>
 				<div class="f_soc">
 					<p class="header_soc">
-						<a href="#" class="header_logo_soc"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/tg.png" alt=""></a>
-						<a href="#" class="header_logo_soc"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/ws.png" alt=""></a>
+						<a href="#" class="header_logo_soc"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/tg.png"  alt="Телеграмм" title="Телеграмм"></a>
+						<a href="#" class="header_logo_soc"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/ws.png"  alt="Ватсап" title="Ватсап"></a>
 						<a href="tel:84952200396" class="header_tell">8 495 220 03 96</a>
 					</p>
 				</div>

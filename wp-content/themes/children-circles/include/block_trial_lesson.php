@@ -17,7 +17,7 @@
 						</div>
 						<div class="biitr_r">
 							<div class="biitr_l_wrap_img">
-								<img src="<?php echo get_template_directory_uri(); ?>/assets/img/bonus.png" alt="">
+								<img src="<?php echo get_template_directory_uri(); ?>/assets/img/bonus.png" alt="Бонус" title="Бонус">
 							</div>
 						</div>
 					</div>

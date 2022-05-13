@@ -43,7 +43,7 @@
 							<div class="rar_item_wrap_star">
 								<?php for ($i = 0; $i < $stars_count; $i++) { ?>
 									<div class="wrap_star_img">
-										<img src="<?php echo get_template_directory_uri(); ?>/assets/img/star.png" alt="">
+										<img src="<?php echo get_template_directory_uri(); ?>/assets/img/star.png" alt="Звезда" title="Звезда">
 									</div>
 								<?php } ?>
 							</div>

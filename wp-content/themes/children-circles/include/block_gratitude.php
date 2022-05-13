@@ -1,6 +1,7 @@
+<?php $gratitude_title = get_field('gratitude','option'); ?>
 <div class="block_gratitude">
 	<div class="wrap">
-		<p class="title_block"><?php echo get_field('gratitude','option') ?></p>
+		<p class="title_block"><?php echo $gratitude_title; ?></p>
 		<div class="container_gratitude">
 			<?php
 
@@ -10,7 +11,10 @@
 					<?php foreach ($images as $image_id): ?>
 					<div class="cg_item">
 						<div class="cg_wrap_img">
-							<?php echo wp_get_attachment_image($image_id, $size); ?>
+							<?php echo wp_get_attachment_image($image_id, $size,'', array(
+									'alt' => $gratitude_title,
+									'title' => $gratitude_title,
+							)); ?>
 						</div>
 					</div>
 					<?php endforeach; ?>

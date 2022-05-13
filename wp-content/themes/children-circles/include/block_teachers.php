@@ -8,14 +8,17 @@
 				// Loop through rows.
 				while (have_rows('teachers_item', 'option')) :
 					the_row();
-					$avatar = wp_get_attachment_image(get_sub_field('avatar'), 'full');
 					$name = get_sub_field('name');
 					$description = get_sub_field('description');
+					$avatar = wp_get_attachment_image(get_sub_field('avatar'), 'full','', array(
+							'alt' => $name,
+							'title' => $name,
+					));
 					?>
 					<div class="bt_wrap_slider_item">
 						<div class="bt_item">
 							<div class="bt_avatar_wrap">
-								<img src="<?php echo $avatar; ?>" alt="">
+								<?php echo $avatar; ?>
 							</div>
 							<p class="bt_item_name"><?php echo $name; ?></p>
 							<p class="bt_item_experience"><?php echo $description; ?></p>

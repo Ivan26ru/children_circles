@@ -16,7 +16,10 @@
 
 						$title = get_sub_field('title');
 						$name_list = get_sub_field('name_list');
-						$img_list = wp_get_attachment_image(get_sub_field('img_list'), 'full');
+						$img_list = wp_get_attachment_image(get_sub_field('img_list'), 'full','', array(
+								'alt' => $title,
+								'title' => $title,
+						));
 						$list_item = 'list_item';
 
 						?>

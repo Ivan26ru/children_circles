@@ -8,22 +8,22 @@
 				// Loop through rows.
 				while (have_rows('special_offers_item', 'option')) :
 					the_row();
-
-					// Load sub field value.
-					$img = wp_get_attachment_image(get_sub_field('img'), 'full');
 					$title = get_sub_field('title');
 					$description = get_sub_field('description');
-
+					$img = wp_get_attachment_image(get_sub_field('img'), 'full','', array(
+							'alt' => $title,
+							'title' => $title,
+					));
 					?>
 					<div class="bso_item_card">
 						<div class="bso_card_wrap_img">
-							<img src="<?php echo $img; ?>" alt="">
+							<?php echo $img; ?>
 						</div>
 						<p class="bso_ic_title"><?php echo $title; ?></p>
 						<p class="bso_card_text"><?php echo $description; ?></p>
 						<a href="#" class="bso_ic_block_read_more">Подробнее</a>
 						<div class="icon_fire">
-							<img src="<?php echo get_template_directory_uri(); ?>/assets/img/fire.png" alt="">
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/img/fire.png"   alt="Fire" title="Fire">
 						</div>
 					</div>
 				<?php
