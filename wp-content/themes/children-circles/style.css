@@ -9,11 +9,13 @@ Author URI: https://vk.com/ivan26ru
 */
 :root {
     --my-orange: rgba(245, 234, 201, 1);
-    --my-purple: #00B2BE;
+    --my-purple: rgba(0, 178, 190, 1);
     --my-red: rgba(218, 91, 60, 1);
+    --my-red_dark: rgb(192, 65, 34);
+
     --my-white-opacity: rgba(255, 255, 255, 0.5);
     --my-boxshadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.5);
-    --my-darksilver: #5c5c5c;
+    --my-darksilver: rgba(22, 22, 22, 1);
 }
 
 * {
@@ -70,7 +72,11 @@ h1,
     color: #ffffff;
     border: none;
     border-radius: 100px;
-    background: #DA5B3C;
+    background: var(--my-red);
+}
+
+.btn_orange:hover {
+    background: var(--my-red_dark);
 }
 
 .read_more_orange {
@@ -154,7 +160,11 @@ h1,
     text-align: center;
     text-transform: uppercase;
     color: #ffffff;
-    background: #DA5B3C;
+    background: var(--my-red);
+}
+
+.my_cf7_form input[type="submit"]:hover {
+    background: var(--my-red_dark)
 }
 
 .my_cf7_form .form_title {
@@ -189,13 +199,13 @@ header a:hover,
 .rar_read_more:hover,
 .bcc_item_read_more_a:hover,
 footer a:hover {
-    color: #DA5B3C;
+    color: var(--my-red);
 }
 
 .bcc_content a,
 .block_seo a,
 .text_orange {
-    color: #DA5B3C;
+    color: var(--my-red);
 }
 
 blockquote,
@@ -207,8 +217,8 @@ blockquote,
     margin-bottom: 10px;
     padding: 30px 70px;
     text-align: center;
-    color: #DA5B3C;
-    border: 1px solid #DA5B3C;
+    color: var(--my-red);
+    border: 1px solid var(--my-red);
     border-radius: 30px;
     background: url("assets/img/icon_text_quite.png") no-repeat left 24px top 10px / 30px auto,
     url("assets/img/icon_text_quite_bottom.png") no-repeat right 24px bottom 10px / 30px auto;;
@@ -474,13 +484,13 @@ header .wrap {
 }
 
 .bcc_item:hover a {
-    color: #DA5B3C;
+    color: var(--my-red);
 }
 
 .btl_item_total_old {
     font-weight: 100;
     text-decoration: line-through;
-    /*color: #DA5B3C;*/
+    /*color: var(--my-red;*/
 }
 
 .bcc_item_wrap_img {
@@ -542,7 +552,7 @@ header .wrap {
     height: 35px;
     color: #ffffff;
     border-radius: 100%;
-    background: #DA5B3C;
+    background: var(--my-red);
 }
 
 .bcc_container.slick-slider {
@@ -688,7 +698,7 @@ header .wrap {
     text-align: center;
     text-transform: uppercase;
     color: #ffffff;
-    background: #DA5B3C;
+    background: var(--my-red);
 }
 
 .block_pre-school_development {
@@ -1103,7 +1113,11 @@ header .wrap {
     text-align: center;
     text-transform: uppercase;
     border-radius: 18px;
-    background: #DA5B3C;
+    background: var(--my-red);
+}
+
+.bso_ic_title:hover {
+    background: var(--my-red_dark);
 }
 
 .bso_card_text {
@@ -1342,10 +1356,10 @@ footer a {
 }
 
 .bcc_content img {
+    display: block;
     max-width: 100%;
     height: auto;
     border-radius: 30px;
-    display: block;
 }
 
 .sidebar_left {
@@ -1444,7 +1458,7 @@ footer a {
     font-size: 18px;
     display: block;
     margin-top: 5px;
-    color: #DA5B3C;
+    color: var(--my-red);
 }
 
 .sl_work_time {
@@ -1480,7 +1494,7 @@ footer a {
 
 .sr_discount span {
     text-decoration: line-through;
-    color: #DA5B3C;
+    color: var(--my-red);
 }
 
 .btn_find_out_more {
@@ -1498,7 +1512,7 @@ footer a {
 .block_content_seo h6 {
     font-size: 31px;
     margin-top: 10px;
-    padding-left: 40px!important;
+    padding-left: 40px !important;
     background: url("assets/img/icon_info.png") no-repeat left 0 center/ 30px;
 }
 
@@ -1629,11 +1643,11 @@ footer a {
     font-size: 24px;
 }
 
-.dataTables_wrapper{
-    margin-top: 20px;
-    border-radius: 20px;
-    border:1px solid var(--my-purple);
+.dataTables_wrapper {
     overflow: hidden;
+    margin-top: 20px;
+    border: 1px solid var(--my-purple);
+    border-radius: 20px;
 }
 
 .table_description {
@@ -1646,10 +1660,10 @@ footer a {
 }
 
 .bltwu_block_2_table_wrap {
+    overflow: hidden;
     border: 1px solid #00B2BE;
     border-radius: 20px;
     background: #ffffff;
-    overflow: hidden;
 }
 
 .bltwu_block_2_table_wrap .dataTables_wrapper {
@@ -1657,11 +1671,11 @@ footer a {
     border-radius: 0;
 }
 
-.bltwu_block_2_table_wrap .dataTables_wrapper{
+.bltwu_block_2_table_wrap .dataTables_wrapper {
     margin-top: 0;
 }
 
-.bltwu_block_2_table .tablepress__wrap{
+.bltwu_block_2_table .tablepress__wrap {
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -1808,7 +1822,7 @@ footer a {
 
 .bbm_call {
     /*width: 50%;*/
-    background: #D4382C;
+    background: var(--my-red);
 }
 
 .video_resp_shablon {
@@ -1820,7 +1834,7 @@ footer a {
 }
 
 .tablepress .sorting:hover, .tablepress .sorting_asc, .tablepress .sorting_desc {
-    background-color: #DA5B3C;
+    background-color: var(--my-red);
 }
 
 .sticky {
