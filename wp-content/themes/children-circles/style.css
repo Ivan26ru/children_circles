@@ -1661,6 +1661,11 @@ footer a {
     margin-top: 0;
 }
 
+.bltwu_block_2_table .tablepress__wrap{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 .bltwu_block_2 {
     display: flex;
     justify-content: space-between;
