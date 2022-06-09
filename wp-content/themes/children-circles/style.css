@@ -1718,6 +1718,16 @@ footer a {
     margin-top: 22px;
 }
 
+.wpcf7 input:hover,
+.wpcf7 input:focus,
+.form_map .my_cf7_form select:hover,
+.form_map .my_cf7_form select:focus,
+.form_map .my_cf7_form input:focus,
+.form_map .my_cf7_form input:hover {
+    box-shadow: 0px 0px 20px -2px rgba(255, 255, 255, 0.7);
+    outline:1px solid var(--my-red_dark)
+}
+
 .block_seo_1 img,
 .block_seo_2 img {
     overflow: hidden;
