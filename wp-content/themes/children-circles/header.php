@@ -72,13 +72,5 @@
 			<p class="header_contact">с 8:00 до 22:00</p>
 			<a href="#" class="header_contact">info@dadastiopa.ru</a>
 		</div>
-
-		<button class="btn_orange btn_orange_header popmake-114">Записаться</button>
-
-		<div class="menu__burger" id="burger-menu">
-			<div class="menu__burger_wrap_img">
-				<img alt="меню" title="меню" src="<?php echo get_template_directory_uri(); ?>/assets/img/burger.png">
-			</div>
-		</div>
 	</div>
 </header>

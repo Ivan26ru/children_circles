@@ -169,11 +169,11 @@ jQuery(document).ready(function ($) { //ожидание полной загру
     sticky_block('#block_content','#sidebar_left_container,#sidebar_right_container', 80);
     sticky_block('#bltwu_block_2','#bltwu_form_wrap', 80);
 
-    var burgerMenu = document.getElementById('burger-menu');
-    var overlay = document.getElementById('my_mobile_menu');
-    burgerMenu.addEventListener('click', function () {
-        this.classList.toggle("close");
-        overlay.classList.toggle("overlay");
-    });
+    // var burgerMenu = document.getElementById('burger-menu');
+    // var overlay = document.getElementById('my_mobile_menu');
+    // burgerMenu.addEventListener('click', function () {
+    //     this.classList.toggle("close");
+    //     overlay.classList.toggle("overlay");
+    // });
 
 }); //конец ready
