@@ -1498,8 +1498,8 @@ footer a {
 .block_content_seo h6 {
     font-size: 31px;
     margin-top: 10px;
-    padding-left: 40px;
-    background: url("assets/img/icon_info.png") no-repeat left 0px center/ 30px;
+    padding-left: 40px!important;
+    background: url("assets/img/icon_info.png") no-repeat left 0 center/ 30px;
 }
 
 .bc_content {
@@ -1634,32 +1634,6 @@ footer a {
     border-radius: 20px;
     border:1px solid var(--my-purple);
     overflow: hidden;
-}
-
-/*.dataTables_wrapper tbody{*/
-/*    overflow-y: auto;*/
-/*    max-height: 500px;*/
-/*}*/
-
-.tablepress tfoot th,
-.tablepress thead th {
-    vertical-align: middle;
-    color: #ffffff;
-    background-color: var(--my-purple); /* 	font-weight: 700; */
-}
-
-.tablepress .row-hover tr:hover td {
-    background-color: var(--my-orange);
-}
-
-.tablepress {
-    font-size: 18px;
-    /*border:1px solid var(--my-purple);*/
-}
-
-.tablepress td,
-.tablepress th {
-    padding-left: 10px;
 }
 
 .table_description {
