@@ -575,9 +575,9 @@ header .wrap {
 
 .block_trial_lesson {
     padding-bottom: 25px;
-    /*background: url("assets/img/bg_probnoe.png") no-repeat center/cover;*/
+    background: url("assets/img/bg1.jpg") no-repeat top center/cover;
     /*background: url("assets/img/bg_probnoe.png") no-repeat center/cover, rgb(45 36 54 / 44%);*/
-    background: #00B2BE;
+    /*background: #00B2BE;*/
     /*background-blend-mode: color-burn;*/
 }
 
