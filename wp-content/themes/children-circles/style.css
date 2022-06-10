@@ -15,7 +15,9 @@ Author URI: https://vk.com/ivan26ru
 
     --my-white-opacity: rgba(255, 255, 255, 0.5);
     --my-boxshadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.5);
-    --my-darksilver: rgba(22, 22, 22, 1);
+    --my-darksilver: #5c5c5c;
+
+    --my-bg-purple-img: url("assets/img/bg1.jpg") repeat top center/ 1920px auto;
 }
 
 * {
@@ -575,7 +577,7 @@ header .wrap {
 
 .block_trial_lesson {
     padding-bottom: 25px;
-    background: url("assets/img/bg1.jpg") no-repeat top center/cover;
+    background: var(--my-bg-purple-img);
     /*background: url("assets/img/bg_probnoe.png") no-repeat center/cover, rgb(45 36 54 / 44%);*/
     /*background: #00B2BE;*/
     /*background-blend-mode: color-burn;*/
@@ -711,7 +713,8 @@ header .wrap {
     padding: 21px 0;
     text-align: center;
     color: #ffffff;
-    background: var(--my-purple);
+    /*background: var(--my-purple);*/
+    background: var(--my-bg-purple-img);
 }
 
 .text_block {
@@ -814,7 +817,7 @@ header .wrap {
     color: #ffffff;
     /*background: url("assets/img/bg_we_teach.png") no-repeat center/cover, rgb(0 178 190 / 20%);*/
     /*background-blend-mode: color-burn;*/
-    background: var(--my-purple);
+    background: var(--my-bg-purple-img);
 }
 
 .container_we_teach {
@@ -1051,7 +1054,7 @@ header .wrap {
     color: #ffffff;
     /* background: url("assets/img/bg_special_offers.png") no-repeat center/cover, rgb(0 178 190 / 80%); */
     /* background-blend-mode: soft-light; */
-    background: var(--my-purple);
+    background: var(--my-bg-purple-img);
 }
 
 .block_special_offers .title_block {
@@ -1199,7 +1202,7 @@ header .wrap {
     padding-top: 15px;
     padding-bottom: 20px;
     color: #ffffff;
-    background: var(--my-purple);
+    background: var(--my-bg-purple-img);
 }
 
 .bom_container {
@@ -1724,8 +1727,8 @@ footer a {
 .form_map .my_cf7_form select:focus,
 .form_map .my_cf7_form input:focus,
 .form_map .my_cf7_form input:hover {
+    outline: 2px solid var(--my-red_dark);
     box-shadow: 0px 0px 20px -2px rgba(255, 255, 255, 0.7);
-    outline:1px solid var(--my-red_dark)
 }
 
 .block_seo_1 img,
