@@ -10,6 +10,7 @@ Author URI: https://vk.com/ivan26ru
 :root {
     --my-orange: rgba(245, 234, 201, 1);
     --my-purple: rgba(0, 178, 190, 1);
+    --my-purple-opacity: rgb(182 250 255);
     --my-red: rgba(218, 91, 60, 1);
     --my-red_dark: rgb(192, 65, 34);
 
@@ -440,7 +441,6 @@ header .wrap {
     padding-bottom: 25px;
     /*background: url('assets/img/bg_children_circles.png') no-repeat center/cover, rgba(226, 226, 226, 0.8);*/
     /*background-blend-mode: screen;*/
-    /*background: rgb(231 231 231 / 60%);*/
 }
 
 .title_block {
@@ -483,7 +483,7 @@ header .wrap {
 }
 
 .bcc_item:hover {
-    background: #F5EAC9;
+    background: var(--my-purple-opacity);
 }
 
 .bcc_item:hover a {
@@ -754,7 +754,7 @@ header .wrap {
 }
 
 .bpsd_ic_block:hover {
-    background: var(--my-orange)
+    background: var(--my-purple-opacity)
 }
 
 .bpsd_ic_name_list {
@@ -872,7 +872,7 @@ header .wrap {
 
 .cwt_item a:hover {
     color: #000000;
-    background: var(--my-orange);
+    background: var(--my-purple-opacity);
 }
 
 .cwt_item {
@@ -1436,7 +1436,7 @@ footer a {
 
 .sl_menu_ul a:hover {
     border-radius: 54px;
-    background: rgba(255, 193, 7, 0.3);
+    background: var(--my-purple-opacity);
 }
 
 .sl_item_map {
