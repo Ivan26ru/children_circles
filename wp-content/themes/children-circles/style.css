@@ -18,6 +18,7 @@ Author URI: https://vk.com/ivan26ru
     --my-darksilver: #5c5c5c;
 
     --my-bg-purple-img: url("assets/img/bg1.jpg") repeat top center/ 1920px auto;
+    --my-bg-purple-img2: url("assets/img/bg2.jpg") repeat top center/ 1920px auto;
 }
 
 * {
@@ -817,7 +818,7 @@ header .wrap {
     color: #ffffff;
     /*background: url("assets/img/bg_we_teach.png") no-repeat center/cover, rgb(0 178 190 / 20%);*/
     /*background-blend-mode: color-burn;*/
-    background: var(--my-bg-purple-img);
+    background: var(--my-bg-purple-img2);
 }
 
 .container_we_teach {
@@ -1054,7 +1055,7 @@ header .wrap {
     color: #ffffff;
     /* background: url("assets/img/bg_special_offers.png") no-repeat center/cover, rgb(0 178 190 / 80%); */
     /* background-blend-mode: soft-light; */
-    background: var(--my-bg-purple-img);
+    background: var(--my-bg-purple-img2);
 }
 
 .block_special_offers .title_block {
