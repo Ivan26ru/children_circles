@@ -10,7 +10,7 @@ Author URI: https://vk.com/ivan26ru
 :root {
     --my-orange: rgba(245, 234, 201, 1);
     --my-purple: rgba(0, 178, 190, 1);
-    --my-purple-opacity: rgb(182 250 255);
+    --my-purple-opacity: #8fdce2;
     --my-red: rgba(218, 91, 60, 1);
     --my-red_dark: rgb(192, 65, 34);
 
@@ -109,7 +109,7 @@ h1,
 .my_cf7_form.my_cf7_magenta {
     color: #ffffff;
     border: 1px solid rgba(255, 255, 255, 0.2);
-    background: rgba(0, 178, 190, 0.7);
+    background: var(--my-purple);
 }
 
 .my_cf7_form .cf7_block span:first-child input {
