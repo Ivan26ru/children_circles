@@ -262,8 +262,9 @@
         display: block;
     }
 
-    footer {
-        margin-bottom: 60px;
+    .biitr_l,
+    .btl_item_text {
+        display: none;
     }
 }
 
