@@ -50,11 +50,11 @@
 
 
     .slick-prev:before {
-        left: 0px;
+        left: 0;
     }
 
     .slick-next:before {
-        right: 0px;
+        right: 0;
     }
 
     .slick-prev, .slick-next {
@@ -64,7 +64,7 @@
     .bpsd_wrap_card {
         flex-wrap: wrap;
         justify-content: space-around;
-        margin-top: 0px;
+        margin-top: 0;
     }
 
     .bpsd_item_card {
@@ -79,7 +79,7 @@
     .bom_container {
         flex-wrap: wrap;
         justify-content: space-around;
-        margin-top: 0px;
+        margin-top: 0;
     }
 
     .bom_item {
@@ -227,7 +227,7 @@
     }
 
     footer {
-        padding: 10px 0px;
+        padding: 10px 0;
     }
 
     .footer_wrap_menu_1,
