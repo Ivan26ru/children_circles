@@ -48,9 +48,9 @@
 								<a href="#" class="header_logo_soc"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/tg.png"  alt="Телеграмм" title="Телеграмм"></a>
 								<a href="#" class="header_logo_soc"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/ws.png"  alt="Ватсап" title="Ватсап"></a>
 							</p>
-							<p class="sl_contact">с 8:00 до 22:00</p>
+							<p class="sl_contact">с 10:00 до 22:00</p>
 						</div>
-						<a href="#" class="sl_email">info@dadastiopa.ru</a>
+						<a href="#" class="sl_email">kf@okcuzao.ru</a>
 					</div>
 				</div>
 			</div>

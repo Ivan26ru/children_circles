@@ -54,7 +54,7 @@
 						<p class="blt_description">Подготовительные курсы, занятия, кружки</p>
 					</div>
 				</a>
-				<p class="f_adress">г.Москва, ул.Степана Супруна, д.4</p>
+				<p class="f_adress">г.Москва, ул.Профсоюзная, д.115, к.1</p>
 				<div class="f_soc">
 					<p class="header_soc">
 						<a href="#" class="header_logo_soc"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/tg.png"  alt="Телеграмм" title="Телеграмм"></a>
@@ -62,7 +62,7 @@
 						<a href="tel:84952200396" class="header_tell">8 495 220 03 96</a>
 					</p>
 				</div>
-				<p class="header_contact">с 8:00 до 22:00</p>
+				<p class="header_contact">с 10:00 до 22:00</p>
 				<a href="/sitemap.xml" class="f_sitemap">Карта сайта</a>
 			</div>
 		</div>
