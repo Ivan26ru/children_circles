@@ -38,15 +38,15 @@
 						?>
 					</div>
 					<div class="sl_item_map">
-						<img src="<?php echo get_template_directory_uri(); ?>/assets/img/sl_map.png"   alt="Карта" title="Карта">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/img/sl_map.png" alt="Карта" title="Карта">
 					</div>
 					<div class="sl_item_contacts">
 						<p class="f_adress">Центральный офис:<br>Россия, г. Москва,<br>ул.Профсоюзная, д.115, к.1</p>
 						<a href="tel:84952200396" class="sl_tel">8 495 220 03 96</a>
 						<div class="sl_work_time">
 							<p class="sl_soc">
-								<a href="#" class="header_logo_soc"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/tg.png"  alt="Телеграмм" title="Телеграмм"></a>
-								<a href="#" class="header_logo_soc"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/ws.png"  alt="Ватсап" title="Ватсап"></a>
+								<a href="#" class="header_logo_soc"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/tg.png" alt="Телеграмм" title="Телеграмм"></a>
+								<a href="#" class="header_logo_soc"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/ws.png" alt="Ватсап" title="Ватсап"></a>
 							</p>
 							<p class="sl_contact">с 10:00 до 22:00</p>
 						</div>
@@ -68,7 +68,9 @@
 							$catID = get_query_var('cat');
 							if ($cat_desc = category_description($catID)) echo $cat_desc;
 						} else {
-							the_content();
+							if (have_posts()) while (have_posts()) : the_post(); // старт цикла
+								the_content();
+							endwhile; // конец цикла
 						} ?>
 					</div>
 				</div>
