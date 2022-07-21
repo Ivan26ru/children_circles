@@ -130,6 +130,7 @@ if (!function_exists('add_styles')) { // если ф-я уже есть в до�
 		wp_enqueue_style('slick-theme', get_template_directory_uri() . '/assets/libs/slick/slick-theme.css');
 		wp_enqueue_style('main', get_template_directory_uri() . '/style.css?' . date('U'));
 		wp_enqueue_style('main_media', get_template_directory_uri() . '/assets/css/media.css');
+		wp_enqueue_style('woo', get_template_directory_uri() . '/assets/css/woo.css');
 	}
 }
 
@@ -211,4 +212,9 @@ function fix_img_caption_shortcode($val, $attr, $content = null) {
 	return '<div id="' . $id . '" class="wp-caption ' . esc_attr($align) . '" style="width: ' . (0 + (int) $width) . 'px">' . do_shortcode( $content ) . '<p class="wp-caption-text">' . $caption . '</p></div>';
 }
 
+if (class_exists('WooCommerce')){
+	require get_template_directory() . '/woocommerce/includes/wc-functions.php';
+	require get_template_directory() . '/woocommerce/includes/wc-functions-remove.php';
+}
+	require get_template_directory() . '/include/helpers.php';
 ?>
