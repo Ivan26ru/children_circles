@@ -992,7 +992,6 @@ header .wrap {
 }
 
 .rar_container.slick-slider {
-    margin: 0 auto;
     margin-top: 24px;
 }
 
@@ -1876,4 +1875,8 @@ footer a {
 
 #rl2iKJUX8t0 {
     background-image: url("assets/img/video2.jpg") !important;
+}
+
+.slick-dots{
+    /*position: static;*/
 }

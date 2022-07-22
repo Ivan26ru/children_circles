@@ -37,7 +37,7 @@ jQuery(document).ready(function ($) { //ожидание полной загру
                     slidesToShow: 2,
                     slidesToScroll: 2,
                     infinite: true,
-                    dots: true
+                    // dots: true
                 }
             },
             {
