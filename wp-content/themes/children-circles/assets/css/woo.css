@@ -66,10 +66,14 @@
     color: #ffffff;
 }
 
-.woo-block .woocommerce-privacy-policy-text {
+.woo-block {
     color: #ffffff;
 }
 
 .woo-block .woocommerce-privacy-policy-text a {
     color: var(--my-darksilver);
+}
+
+.wc_payment_methods{
+    display: none;
 }
