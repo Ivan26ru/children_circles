@@ -130,7 +130,7 @@ if (!function_exists('add_styles')) { // если ф-я уже есть в до�
 		wp_enqueue_style('slick-theme', get_template_directory_uri() . '/assets/libs/slick/slick-theme.css');
 		wp_enqueue_style('main', get_template_directory_uri() . '/style.css?' . date('U'));
 		wp_enqueue_style('main_media', get_template_directory_uri() . '/assets/css/media.css');
-		wp_enqueue_style('woo', get_template_directory_uri() . '/assets/css/woo.css');
+		wp_enqueue_style('woo', get_template_directory_uri() . '/assets/css/woo.css?' . date('U'));
 	}
 }
 

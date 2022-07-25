@@ -18,3 +18,12 @@ add_filter( 'woocommerce_order_button_text', 'truemisha_order_button_text' );
 function truemisha_order_button_text( $button_text ) {
 	return 'ПЕРЕЙТИ К ОПЛАТЕ';
 }
+
+function is_woo_page(){
+	if ( is_product() || is_cart() || is_checkout()) {
+		return true;
+	}
+	else {
+		return false;
+	}
+}

@@ -54,6 +54,10 @@
     color: #ffffff;
 }
 
+.woo-block__title,
+.woo-block__desc{
+    text-align: center;
+}
 .woo-block__title {
     font-size: 20px;
     font-weight: 400;
@@ -74,6 +78,18 @@
     color: var(--my-darksilver);
 }
 
-.wc_payment_methods{
-    display: none;
+.wc_payment_methods {
+    /*display: none;*/
+}
+
+.block_woo {
+    padding: 80px 0;
+}
+.block-container{
+    padding: 80px 0;
+    background: var(--my-purple);
+}
+
+.block_woo .title_block {
+    color: #ffffff;
 }

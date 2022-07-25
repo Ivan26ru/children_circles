@@ -1,12 +1,15 @@
 /*   
 Theme Name: Обучение в Москве
 Theme URI: https://vk.com/ivan26ru
-Version: 4.0
+Version: 4.1
 Tags: clean, development, html5
 Description: Обучение в москве с возможностью покупки
 Author: Ivan
 Author URI: https://vk.com/ivan26ru
+
+v.4.1 добавил онлайн покупку и сделал новый вид для страниц: товар(product) и заказа(checkout)
 */
+
 :root {
     --my-orange: rgba(245, 234, 201, 1);
     --my-purple: rgba(0, 178, 190, 1);
